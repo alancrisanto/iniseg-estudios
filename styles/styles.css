@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap');
-
 
 :root {
 	--open-sans: 'Open Sans', sans-serif;
 	--oswald: 'Oswald', sans-serif;
-
+    --main-yellow: #F4A320;
+    --main-blue: #19518c;
 	--blue: #0097FC;
 	--light-blue: #7AC1FE;
 	--dark-blue: #008CEA;
 	--grey: #828282;
 }
+
 * {
 	margin: 0;
 	padding: 0;
@@ -20,9 +20,15 @@
 body {
 	background: #eee;
 }
+
 a {
-	text-decoration: none;
+	text-decoration: none !important;
 }
+
 li {
-	list-style: none;
+	list-style: none !important;
+}
+
+img {
+    max-width: 100%;
 }

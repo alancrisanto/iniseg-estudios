@@ -2,103 +2,199 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- STYLES -->
 	<link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/styleMenu.css">
+  <link rel="stylesheet" href="styles/stylesMenu.css">
   <link rel="stylesheet" href="styles/min.css">
   <link rel="stylesheet" href="styles/med.css">
   <link rel="stylesheet" href="styles/large.css">
-	<title>Navbar With Mega Dropdown Menu</title>
+
+  <!-- GOOGLE FONTS  -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CDN BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <!-- CDN BOOTSTRAP ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- TITLE -->
+  <title>Estudios INISEG</title>
 </head>
 <body>
-
-	<nav>
-		<div class="container">
-			<a href="#" class="brand">Brand</a>
-			<ul class="nav-menu">
-				<li>
-					<a href="#"><i class='bx bx-chevron-down' ></i>ESTUDIOS</a>
-					<div class="dropdown-menu">
-						<div class="container">
-							<div class="left-section">
-								<span class="dropdown-close"><i class='bx bx-chevron-left' ></i> Back</span>
-								<h1>BRANDS Products</h1>
-								<p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Aspernatur omnis ex, enim, ullam accusantium vitae culpa! Quia, velit? Minus, quas.</p>
-								<a href="#" class="btn-see-all">See all</a>
-							</div>
-							<div class="right-section">
-								<h3>Products features</h3>
-								<ul class="dropdown-links">
-									<li>
-										<a href="#">
-											<i class='bx bxs-dashboard' ></i>
-											<div>
-												<h5>Website Builder</h5>
-												<p>Lorem ipsum dolor sit amet, consectetur, adipisicing.</p>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class='bx bx-cut' ></i>
-											<div>
-												<h5>Video Editor</h5>
-												<p>Lorem ipsum dolor sit amet, consectetur, adipisicing.</p>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class='bx bx-webcam' ></i>
-											<div>
-												<h5>Screen Recorder</h5>
-												<p>Lorem ipsum dolor sit amet, consectetur, adipisicing.</p>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class='bx bx-refresh' ></i>
-											<div>
-												<h5>Converter</h5>
-												<p>Lorem ipsum dolor sit amet, consectetur, adipisicing.</p>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class='bx bxs-component' ></i>
-											<div>
-												<h5>Compressor</h5>
-												<p>Lorem ipsum dolor sit amet, consectetur, adipisicing.</p>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class='bx bx-cog' ></i>
-											<div>
-												<h5>Integrations</h5>
-												<p>Lorem ipsum dolor sit amet, consectetur, adipisicing.</p>
-											</div>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li>
-					<a href="#">Blogs</a>
-				</li>
-				<li>
-					<a href="#">Contact</a>
-				</li>
-			</ul>
-			<i class='bx bx-menu toggle-navbar' ></i>
-		</div>
-	</nav>
-
+  <header>
+    <div class="header-info-container">
+      <div class="header-info-icons-mobile header-icons">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-youtube"></i>
+        <i class="bi bi-linkedin"></i>
+      </div>
+      <div class="header-info">
+        <div class="header-info-btn">
+          <div class="header-info-btn-link">
+            <a href="#">Solicitar Información</a>
+          </div>
+        </div>
+        <div class="header-info-icons-desktop header-icons">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-twitter"></i>
+          <i class="bi bi-youtube"></i>
+          <i class="bi bi-linkedin"></i>
+        </div>
+        <div class="header-info-phone">
+          <i class="bi bi-telephone"></i>
+          <span>
+            (+34) 912 141 926
+          </span>
+        </div>
+        <div class="header-info-aula">
+          <div class="header-info-aula-btn">
+            <a href="#">Aula Virtual</a>
+          </div>
+        </div>
+        <div class="header-info-lang">
+          <div class="header-info-lang-icon">
+            <i class="bi bi-globe"></i>
+            <span class="info-lang">Español</span>
+          </div>
+        </div>
+    </div>
+    </div>
+    <nav>
+      <div class="container">
+        <a href="#" class="brand">Brand</a>
+        <ul class="nav-menu">
+          <li>
+            <a href="#"><i class='bx bx-chevron-down' ></i>ESTUDIOS</a>
+            <div class="dropdown-menu">
+              <div class="container">
+                <div class="left-section">
+                  <span class="dropdown-close"><i class='bx bx-chevron-left' ></i> Back</span>
+                  <h1>BRANDS Products</h1>
+                  <p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Aspernatur omnis ex, enim, ullam accusantium vitae culpa! Quia, velit? Minus, quas.</p>
+                  <a href="#" class="btn-see-all">See all</a>
+                </div>
+                <div class="right-section">
+                  <h3>Products features</h3>
+                  <ul class="dropdown-links">
+                    <li>
+                      <a href="#">
+                        <i class='bx bxs-dashboard' ></i>
+                        <div>
+                          <h5>Website Builder</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur, adipisicing.</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class='bx bx-cut' ></i>
+                        <div>
+                          <h5>Video Editor</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur, adipisicing.</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class='bx bx-webcam' ></i>
+                        <div>
+                          <h5>Screen Recorder</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur, adipisicing.</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class='bx bx-refresh' ></i>
+                        <div>
+                          <h5>Converter</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur, adipisicing.</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class='bx bxs-component' ></i>
+                        <div>
+                          <h5>Compressor</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur, adipisicing.</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class='bx bx-cog' ></i>
+                        <div>
+                          <h5>Integrations</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur, adipisicing.</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Blogs</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <i class='bx bx-menu toggle-navbar' ></i>
+      </div>
+    </nav>
+    <div class="header-video">
+      <img src="/assets/images/videos/videoPrincipal.gif" autoplay> </img>
+    </div>
+  </header>
+  <main class="main-container">
+    <div class="main-container-head">
+      <h1>Másteres Oficiales</h1>
+      <h6>Fomración Online De Calidad Para Especializarte En Tú Área Profesional</h6>
+    </div>
+    <div class="main-container-body">
+      <div class="main-col-filters">
+        <div class="main-filter-title">
+          <h2>Encuentra tu <span>Master Aquí</span></h2>
+        </div>
+        <div class="main-filter-clear">
+          <i class="bi bi-award"></i>
+          <div class="main-filter-clr-btn">
+            <p>Filtro</p>
+            <p>Limpiar filtro</p>
+          </div>
+        </div>
+        <div class="main-filter-list">
+          <h3>Tipo de Titulación</h3>
+          <form action="">
+            <label for="master-oficial">
+              <input id="master-oficial" name="master-oficial" type="checkbox">
+              Másteres Oficiales
+            </label>
+            <label for="master-oficial">
+              <input id="master-oficial" name="master-oficial" type="checkbox">
+              Másteres Oficiales
+            </label>
+            <label for="master-oficial">
+              <input id="master-oficial" name="master-oficial" type="checkbox">
+              Másteres Oficiales
+            </label>
+      
+          </form>
+        </div>
+      </div>
+      <div class="main-col-courses"></div>
+    </div>
+  </main>
 	<script src="scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

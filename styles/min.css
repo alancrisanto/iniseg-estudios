@@ -1,0 +1,106 @@
+/* ---- HEADER INFORMATION ----- */
+.header-info-container {
+  background-color: var(--main-blue);
+	padding: 1rem;
+}
+
+.header-info-icons-mobile{
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	color: white;
+	font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.header-info-icons-desktop, .header-info-phone{
+	display: none;
+}
+
+.header-info{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* -- BOTÓN SOLICTAR INFORMACIÓN */
+.header-info-btn-link {
+	background-color: white;
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+}
+
+.header-info-btn-link a {
+  color: var(--main-blue);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+/* --- BOTÓN AULA VIRTUAL */
+.header-info-aula-btn{
+  background-color: var(--main-yellow);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.header-info-aula-btn a {
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+/* --- ICON LANGUAGE */
+
+.header-info-lang-icon {
+  color: white;
+}
+
+.info-lang {
+  display: none;
+}
+
+/* --- MAIN AREA */
+
+.main-container{
+  margin-top: 2rem;
+}
+
+.main-container-head {
+
+  text-align: center;
+}
+
+
+
+
+/* --- MEDIA QUERIES */
+
+@media screen and (min-width: 425px ) {
+  
+  .header-info{
+    justify-content: end;
+  }
+
+  .header-info-aula-btn a, .header-info-btn-link a {
+    font-size: 1rem;
+  }
+
+  .header-info-lang-icon {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 550px ) {
+  
+  .header-info{
+    justify-content: end;
+  }
+  
+  .header-info-phone{
+    display: block;
+    color: white;
+  }
+  }
