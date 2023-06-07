@@ -5,9 +5,9 @@
   --main-blue: #19518c;
   --main-yellow: #FBC009;
 	--dark-yellow: #F4A320;
+	--dark-blue: #222C3F;
 	--blue: #0097FC;
 	--light-blue: #7AC1FE;
-	--dark-blue: #008CEA;
 	--grey: #828282;
 }
 
@@ -32,4 +32,13 @@ li {
 
 img {
     max-width: 100%;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin: 0.2rem 0;
 }
