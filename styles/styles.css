@@ -2,8 +2,9 @@
 :root {
 	--open-sans: 'Open Sans', sans-serif;
 	--oswald: 'Oswald', sans-serif;
-    --main-yellow: #F4A320;
-    --main-blue: #19518c;
+  --main-blue: #19518c;
+  --main-yellow: #FBC009;
+	--dark-yellow: #F4A320;
 	--blue: #0097FC;
 	--light-blue: #7AC1FE;
 	--dark-blue: #008CEA;

@@ -67,7 +67,7 @@
     </div>
     <nav>
       <div class="container">
-        <a href="#" class="brand">Brand</a>
+        <img class="logo" src="/assets/images/nombre-azul.webp" alt="Logo INISEG">
         <ul class="nav-menu">
           <li>
             <a href="#"><i class='bx bx-chevron-down' ></i>ESTUDIOS</a>
@@ -160,38 +160,102 @@
       <h1>Másteres Oficiales</h1>
       <h6>Fomración Online De Calidad Para Especializarte En Tú Área Profesional</h6>
     </div>
+    <div class="filtrar-mobile-btn">
+      <button class="btn btn-primary d-lg-none btn-sm my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><i class="bi bi-sort-down"></i> Filtrar</button>
+    </div>
     <div class="main-container-body">
-      <div class="main-col-filters">
+      <div class="main-col-filters offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasResponsiveLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+        </div>
         <div class="main-filter-title">
-          <h2>Encuentra tu <span>Master Aquí</span></h2>
+          <h2>Encuentra tu <br> <span>Máster Aquí</span></h2>
         </div>
         <div class="main-filter-clear">
           <i class="bi bi-award"></i>
           <div class="main-filter-clr-btn">
-            <p>Filtro</p>
+            <h2>Filtro</h2>
             <p>Limpiar filtro</p>
           </div>
         </div>
         <div class="main-filter-list">
-          <h3>Tipo de Titulación</h3>
-          <form action="">
-            <label for="master-oficial">
-              <input id="master-oficial" name="master-oficial" type="checkbox">
-              Másteres Oficiales
-            </label>
-            <label for="master-oficial">
-              <input id="master-oficial" name="master-oficial" type="checkbox">
-              Másteres Oficiales
-            </label>
-            <label for="master-oficial">
-              <input id="master-oficial" name="master-oficial" type="checkbox">
-              Másteres Oficiales
-            </label>
-      
-          </form>
+          <div class="filter-titulacion">
+            <h3>Tipo de Titulación</h3>
+            <form action="">
+              <label for="master-oficial">
+                <input id="master-oficial" name="master-oficial" type="checkbox">
+                Másteres Oficiales
+              </label>
+              <label for="master-executive">
+                <input id="master-executive" name="master-executive" type="checkbox">
+                Másteres Executives
+              </label>
+              <label for="master-profesional">
+                <input id="master-profesional" name="master-profesional" type="checkbox">
+                Másteres Profesionales
+              </label>
+              <label for="diplomado-superior">
+                <input id="diplomado-superior" name="diplomado-superior" type="checkbox">
+                Diplomados Superiores Y Cursos Técnicos
+              </label>
+            </form>
+          </div>
+          <div class="filter-concimiento">
+            <h3>Área de Conocimiento</h3>
+            <form action="">
+              <label for="seg-publica">
+                <input id="seg-publica" name="seg-publica" type="checkbox">
+                Seguridad Pública y Privada
+              </label>
+              <label for="seg-defensa">
+                <input id="seg-defensa" name="seg-defensa" type="checkbox">
+                Seguridad y Defensa
+              </label>
+              <label for="ciberseguridad">
+                <input id="ciberseguridad" name="ciberseguridad" type="checkbox">
+                Ciberseguridad
+              </label>
+              <label for="der-inter">
+                <input id="der-inter" name="der-inter" type="checkbox">
+                Derecho y Relaciones Internacionales
+              </label>
+              <label for="criminologia">
+                <input id="criminologia" name="criminologia" type="checkbox">
+                Criminilogía y Criminalística
+              </label>
+              <label for="inteligencia">
+                <input id="inteligencia" name="inteligencia" type="checkbox">
+                Inteligencia
+              </label>
+            </form>
+          </div>
+          <div class="filter-universidad">
+            <h3>Universidad</h3>
+            <form action="">
+              <label for="ecampus">
+                <input id="ecampus" name="ecampus" type="checkbox">
+                Universidad eCampus
+              </label>
+              <label for="nebrija">
+                <input id="nebrija" name="nebrija" type="checkbox">
+                Universidad Antonio de Nebrija
+              </label>
+              <label for="madrid">
+                <input id="madrid" name="madrid" type="checkbox">
+                Universidad de Madrid
+              </label>
+              <label for="iniseg">
+                <input id="iniseg" name="iniseg" type="checkbox">
+                Iniseg
+              </label>
+            </form>
+          </div>
         </div>
       </div>
-      <div class="main-col-courses"></div>
+      <div class="main-col-courses">
+        <h3>Cursos</h3>
+      </div>
     </div>
   </main>
 	<script src="scripts.js"></script>

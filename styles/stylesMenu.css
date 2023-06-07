@@ -9,6 +9,7 @@ nav {
 	background: #fff;
 	height: 60px;
 	position: relative;
+	margin: 1rem 0;
 }
 nav .toggle-navbar {
 	cursor: pointer;
@@ -20,6 +21,7 @@ nav .toggle-navbar {
 nav > .container {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 }
 nav .brand {
 	margin-right: auto;
