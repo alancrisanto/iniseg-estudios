@@ -258,7 +258,6 @@
 .price-before h6 {
   text-decoration: line-through;
   text-decoration-color: var(--dark-blue) ;
-
 }
 
 .price-before h6 span, .price-now h5 span{
