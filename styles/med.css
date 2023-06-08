@@ -1,4 +1,65 @@
-@media only screen and (min-width: 35rem) {
-
+@media only screen and (min-width: 34rem) {
+  .header-info{
+    justify-content: end;
+  }
   
+  .header-info-phone{
+    display: block;
+    color: white;
+  }
+
+  .main-cont-mobile-text {
+    left: 10rem;
+  }
+
+  .course-img-text {
+    padding: 1.5rem 0.8rem 8px 2rem;
+  }
+
+  .course-img-text p:nth-child(3){
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+  }
+
+  .course-img-text p {
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  .header-info-icons-mobile{
+    display: none;
+  }
+
+  .header-info-icons-desktop{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .main-container-head h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-container-head span {
+    font-size: 1.5rem;
+  }
+
+  .main-cont-mobile-text{
+    left: 14.5rem;
+    bottom: 2rem;
+  }
+
+  .main-cont-mobile-text p:nth-child(1){
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .main-cont-mobile-text p:nth-child(2){
+    font-size: 1.8rem;
+  }
 }

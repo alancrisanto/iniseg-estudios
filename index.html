@@ -12,7 +12,9 @@
   <link rel="stylesheet" href="styles/large.css">
 
   <!-- GOOGLE FONTS  -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   <!-- CDN BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -159,13 +161,26 @@
   <main class="main-container">
     <div class="main-container-head">
       <h1>Másteres Oficiales</h1>
-      <h6>Fomración Online De Calidad Para Especializarte En Tú Área Profesional</h6>
+      <span>Formación Online De Calidad Para Especializarte En Tú Área Profesional</span>
     </div>
+    <!-- BANNER IMAGEN MÓVIL -->
+    <div class="main-container-img-mobile">
+      <picture>
+        <source media="(min-width: 760px)" srcset="/assets/images/img_3_1.png">
+        <img src="/assets/images/img_3.png" alt="iniseg beca 60%">
+      </picture>
+      <div class="main-cont-mobile-text">
+        <p>Da un Salto <br><span>Profesional</span><br></p>
+        <p>Accede a una<span> Beca<br> hasta del 60%</span></p>
+      </div>
+    </div>
+    <!-- BOTON FILTRAR -->
     <div class="filtrar-mobile-btn">
-      <button class="btn btn-primary d-lg-none btn-sm my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><i class="bi bi-sort-down"></i> Filtrar</button>
+      <button class="btn btn-warning d-lg-none btn-sm my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><i class="bi bi-sort-down"></i> Filtrar</button>
     </div>
-    <!-- Filtros -->
+    <!-- FILTROS - CARDS -->
     <div class="main-container-body">
+      <!-- FILTRO -->
       <div class="main-col-filters offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasResponsiveLabel"></h5>
@@ -255,12 +270,14 @@
           </div>
         </div>
       </div>
-      <!-- Cards cursos -->
+      <!-- CARDS CURSOS -->
       <div class="main-col-courses-card">
         <div class="main-col-course-image">
           <img src="/assets/images/img_1.png" alt="Imagen Master Derecho Internacional">
           <div class="course-img-text">
-            <h3>Curso de Máster</h3>
+            <p>Máster Oficial</p>
+            <hr>
+            <p>Derecho Internacional Humanitario y su Aplicación Práctica ante Conflictos</p>
           </div>
         </div>
         <div class="main-col-course-detail">
@@ -295,10 +312,10 @@
               </div>
             </div>
             <div class="course-detail-info-btns">
-              <div class="course-btn-1">
+              <div class="course-btn">
                 <a href="">Ver Más Info Aquí</a>
               </div>
-              <div class="course-btn-2">
+              <div class="course-btn">
                 <a href="">Matricularme Ahora</a>
               </div>
             </div>
@@ -306,6 +323,14 @@
         </div>
       </div>
     </div>
+
+
+
+    <!-- IMAGEN MÓVIL GRUPO INVESTIGACIÓN -->
+    <div class="main-img-mob my-5">
+      <img src="/assets/images/img_2.png" alt="Iniseg Grupo de investigación militar">
+    </div>
+
   </main>
 	<script src="scripts.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

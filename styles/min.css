@@ -80,7 +80,51 @@
 .main-container-head {
   margin-bottom: 1rem;
   text-align: center;
+  color: var(--dark-blue);
 }
+
+.main-container-head h1{
+  font-weight: 700;
+}
+
+.main-container-head span {
+  font-size: 1.25rem;
+}
+/* --IMAGEN BANNER MOBILE */
+.main-container-img-mobile{
+  display: block;
+  text-align: center;
+  position: relative;
+}
+
+/* --IMAGEN BANNER TEXT MOBILE */
+.main-cont-mobile-text{
+  position: absolute;
+  bottom: 1rem;
+  left: 3rem;
+  color: white;
+  text-align: justify;
+}
+
+.main-cont-mobile-text p {
+  font-weight: 300;
+}
+
+.main-cont-mobile-text p:nth-child(1) {
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.main-cont-mobile-text p:nth-child(2) {
+  font-size: 1.3rem;
+}
+
+.main-cont-mobile-text p span {
+  font-weight: 700;
+  margin: 0;
+}
+
 
 /* -- BTN OPEN FILTER */
 
@@ -145,6 +189,11 @@
   margin: 1rem 0;
 }
 
+/* --- BOTÓN FILTRAR */
+.filtrar-mobile-btn{
+  margin-top: 1.5rem;
+}
+
 
 /* --- MAIN COURSES CARD */
 
@@ -152,6 +201,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 1.5rem;
 }
 
 .course-detail-pricing {
@@ -161,10 +211,42 @@
 }
 
 /* --- CARD ECAMPUS IMG */
+.main-col-course-image{
+  position: relative;
+}
+
+.course-img-text{
+  position: absolute;
+  bottom: 0px;
+  padding: 0.5rem 0.8rem 2px;
+  color: white;
+}
+
+.course-img-text p{
+  margin: 0;
+  line-height: 1rem;
+}
+
+.course-img-text p:nth-child(3){
+  font-size: 0.75rem;
+  margin-top: 3px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.course-img-text hr{
+  width: 60%;
+  margin: 0;
+  opacity: 1;
+  
+}
+
 .course-detail-img img {
   max-width: 120px;
   height: auto;
 }
+
+
 
 /* --- CARD PRICE */
 .course-detail-price {
@@ -212,12 +294,61 @@
 .course-icon-1 img {
   max-width: 36px;
 }
-.course-icon-1 img:nth-child(3) {
-  max-width: 40px;
+
+.course-icon-1 span {
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+/* ---- CARD BUTTONS */
+
+.course-detail-info-btns{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.course-btn {
+  background-color: var(--blue) ;
+  padding: 1rem;
+  margin: 1rem 0;
+  width: 90%;
+  text-align: center;
+}
+
+.course-btn:nth-child(2){
+  background-color: var(--main-yellow);
+}
+
+.course-btn a {
+  color: white;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
+/* -- IMAGEN GRUPO INVESTIGACION MÓVIL */
+
+.main-img-mob{
+  text-align: center;
 }
 
 
 /* --- MEDIA QUERIES */
+
+@media screen and (min-width: 360px ) {
+  .main-cont-mobile-text {
+    left: 4rem;
+  }
+}
+@media screen and (min-width: 375px ) {
+  .main-cont-mobile-text {
+    left: 5rem;
+  }
+
+  .course-img-text{
+    padding: 1.5rem 0.8rem 8px;
+  }
+}
 
 @media screen and (min-width: 425px ) {
   
@@ -232,16 +363,24 @@
   .header-info-lang-icon {
     font-size: 1.8rem;
   }
-}
 
-@media screen and (min-width: 550px ) {
-  
-  .header-info{
-    justify-content: end;
+  .main-cont-mobile-text {
+    left: 6.5rem;
   }
-  
-  .header-info-phone{
-    display: block;
-    color: white;
+
+  .course-img-text{
+    padding: 1.5rem 0.8rem 8px;
   }
+
+  .course-img-text p{
+    margin-bottom: 0.5rem;
+    line-height: 1rem;
+    font-weight: 300;
+    font-size: 1.3rem;
   }
+
+  .course-img-text p:nth-child(3) {
+    margin-bottom: 2px;
+    font-size: 1rem;
+  }
+}
