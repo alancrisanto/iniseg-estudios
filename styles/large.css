@@ -69,6 +69,10 @@
     padding: 0 1rem;
   }
 
+  .price-before h6{
+    font-size: 1.2rem;
+  }
+
   /* ÍCONOS PRECIOS */
   .course-detail-info-icons {
     margin: 0;
@@ -121,5 +125,16 @@
   
   .main-img-desktop {
     display: block;
+  }
+}
+
+@media screen and (max-width:1280px) {
+  .course-img-text p:nth-child(3){
+    font-size: 0.9rem;
+  }
+
+  .course-img-text{
+    padding-right: 0.9rem;
+    bottom: -5px;
   }
 }
