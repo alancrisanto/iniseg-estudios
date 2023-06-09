@@ -129,7 +129,7 @@
   }
 }
 
-@media screen and (max-width:1280px) {
+@media screen and (min-width:1280px) {
   .course-img-text p:nth-child(3){
     font-size: 0.9rem;
   }
