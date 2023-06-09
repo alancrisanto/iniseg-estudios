@@ -1,4 +1,4 @@
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 1024px) {
   .header-info-lang-icon{
     display: flex;
     justify-content: center;

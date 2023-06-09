@@ -1,5 +1,5 @@
 /* 544px */
-@media only screen and (min-width: 34rem) {
+@media only screen and (min-width: 544px) {
   .header-info{
     justify-content: end;
   }
@@ -30,7 +30,7 @@
 }
 
 /* -- 768px */
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 768px) {
   .header-info-icons-mobile{
     display: none;
   }
@@ -95,6 +95,13 @@
 
   .price-now span:nth-child(1){
     font-size: 1.5rem;
+  }
+
+}
+
+@media only screen and (min-width: 820px) {
+  .main-cont-mobile-text {
+    left: 16.5rem;
   }
 
 }
