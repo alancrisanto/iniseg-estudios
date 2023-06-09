@@ -176,6 +176,11 @@
   padding-bottom: 0.6rem;
 }
 
+/* FILTER BANNER IMG */
+.main-container-img-desktop {
+  display: none;
+}
+
 /* --- MAIN FILTER COL */
 .main-filter-list{
   display: flex;
@@ -330,6 +335,10 @@
 
 .main-img-mob{
   text-align: center;
+}
+
+.main-img-desktop {
+  display: none;
 }
 
 

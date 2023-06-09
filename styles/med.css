@@ -3,6 +3,10 @@
   .header-info{
     justify-content: end;
   }
+
+  .header-video{
+    text-align: center;
+  }
   
   .header-info-phone{
     display: block;

@@ -1,4 +1,5 @@
 @media only screen and (min-width: 1024px) {
+  
   .header-info-lang-icon{
     display: flex;
     justify-content: center;
@@ -8,5 +9,117 @@
   .info-lang {
     display: block;
     font-size: 1rem;
+  }
+
+  .main-container-img-mobile {
+    display: none;
+  }
+
+  /* CONTENEDOR MAIN FILTER Y CARDS */
+
+  .main-container-body{
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* CARDS */
+
+  /* CARD IMG */
+  .main-col-course-image img {
+    width: 100%;
+    height: 250px;
+  }
+
+  /* CARD TEXT IMG*/
+  .course-img-text {
+    bottom: 0;
+    padding-left: 1.5rem;
+  }
+
+  .course-img-text p:nth-child(3){
+    font-size: 0.75rem;
+  }
+
+  .course-img-text p{
+    font-size: 1rem;
+    line-height: 0.5rem;
+  }
+
+  .main-col-courses-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 250px;
+    margin-top: 0.75rem;
+    align-items: center;
+  }
+
+  .main-col-course-detail{
+    display: flex;
+    flex-direction: row;
+    min-width: 0;
+  }
+
+  .course-detail-pricing{
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 0;
+    padding: 0 1rem;
+  }
+
+  /* ÍCONOS PRECIOS */
+  .course-detail-info-icons {
+    margin: 0;
+    gap: 1.5rem;
+  }
+
+  /* BOTONES PRECIO */
+  .course-btn {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .course-btn a {
+    font-size: 1rem
+  }
+
+  /* FILTER COLUMN */
+
+  .main-col-filters {
+    overflow:hidden;
+  }
+
+  /* IMAGEN BANNER BECA */
+
+  .main-container-img-desktop {
+    display: block;
+    margin-top: 3rem;
+    position: relative;
+  }
+
+  .main-cont-mobile-text{
+    position: absolute;
+    left: 1rem;
+    bottom: 0;
+  }
+
+  .main-cont-mobile-text p:nth-child(1){
+    font-size: 2.5rem;
+  }
+
+  .main-cont-mobile-text p:nth-child(2){
+    font-size: 1.5rem;
+  }
+
+  /* IMAGEN GRUPO INVESTIGACIÓN DESKTOP */
+
+  .main-img-mob{
+    display: none;
+  }
+  
+  .main-img-desktop {
+    display: block;
   }
 }
