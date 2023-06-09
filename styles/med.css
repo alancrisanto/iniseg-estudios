@@ -7,6 +7,9 @@
   .header-video{
     text-align: center;
   }
+  .header-video img{
+    width: 100%;
+  }
   
   .header-info-phone{
     display: block;
