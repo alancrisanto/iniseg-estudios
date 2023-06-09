@@ -331,6 +331,10 @@
   font-size: 1.3rem;
 }
 
+.matricula a{
+  color: var(--dark-blue);
+}
+
 /* -- IMAGEN GRUPO INVESTIGACION MÓVIL */
 
 .main-img-mob{
