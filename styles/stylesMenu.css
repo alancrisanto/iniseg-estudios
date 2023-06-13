@@ -7,9 +7,9 @@
 
 nav {
 	background: transparent;
-	height: 92px;
+	height: 80px;
 	position: relative;
-	padding: 1rem 0;
+	/* padding: 1rem 0; */
 }
 
 nav:hover{
@@ -39,6 +39,7 @@ nav .brand {
 nav .nav-menu {
 	display: flex;
 	grid-gap: 36px;
+	margin-bottom: 0;
 }
 nav .nav-menu > li {
 	height: 60px;
@@ -71,16 +72,18 @@ nav .nav-menu > li:hover > a .bx {
 }
 nav .nav-menu > li .dropdown-menu {
 	position: absolute;
-	top: 92px;
+	top: 80px;
 	left: 0;
 	width: 100%;
-	background: #fff;
-	overflow-y: hidden;
+	background: #8d8d8d;
+	overflow: hidden;
 	max-height: 0;
 	transition: all .3s ease;
 }
 nav .nav-menu > li:hover .dropdown-menu {
 	max-height: 1000px;
+	display: block;
+	border-radius: 0;
 }
 nav .nav-menu > li .dropdown-menu .container {
 	display: flex;
