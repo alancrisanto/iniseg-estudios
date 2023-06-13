@@ -223,6 +223,10 @@ nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a:hover p {
 		padding-top: 1rem;
 		transition: all .3s ease;
 	}
+	nav .nav-menu > li .dropdown-menu .container {
+		flex-direction: column;
+		padding: 2rem;
+	}
 	nav .nav-menu.show {
 		left: 0;
 	}
@@ -238,7 +242,7 @@ nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a:hover p {
 	}
 	nav .nav-menu > li .dropdown-menu .right-section .dropdown-links {
 		overflow: scroll;
-		height: calc(100vh - 320px);
+		max-height: calc(100vh - 320px);
 	}
 	nav .nav-menu > li .dropdown-menu.show {
 		left: 0;
