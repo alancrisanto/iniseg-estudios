@@ -6,11 +6,16 @@
 }
 
 nav {
-	background: #fff;
-	height: 60px;
+	background: transparent;
+	height: 92px;
 	position: relative;
-	margin: 1rem 0;
+	padding: 1rem 0;
 }
+
+nav:hover{
+	background-color: white;
+}
+
 nav .toggle-navbar {
 	cursor: pointer;
 	position: relative;
@@ -56,7 +61,7 @@ nav .nav-menu > li:hover > a .bx {
 }
 nav .nav-menu > li .dropdown-menu {
 	position: absolute;
-	top: 60px;
+	top: 92px;
 	left: 0;
 	width: 100%;
 	background: #fff;

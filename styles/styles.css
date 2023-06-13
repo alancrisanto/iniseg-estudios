@@ -18,9 +18,6 @@
 	font-family: var(--open-sans);
 }
 
-body {
-	background: #eee;
-}
 
 a {
 	text-decoration: none !important;
