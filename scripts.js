@@ -1,31 +1,34 @@
-const dropdownMenu = document.querySelector('.dropdown-menu');
+const dropdownMenus = document.querySelectorAll('.dropdown-menu');
 const toggleNavbar = document.querySelector('.toggle-navbar');
-const dropdownClose = document.querySelector('.dropdown-close');
 const navMenu = document.querySelector('.nav-menu');
 
-dropdownMenu.previousElementSibling.addEventListener('click', function () {
-	if(window.innerWidth < 576) {
-		dropdownMenu.classList.add('show');
-		toggleNavbar.classList.add('hide');
-	}
-})
 
-dropdownClose.addEventListener('click', function () {
-	if(window.innerWidth < 576) {
-		dropdownMenu.classList.remove('show');
-		toggleNavbar.classList.remove('hide');
-	}
-})
+dropdownMenus.forEach(function(dropdownMenu) {
+  dropdownMenu.previousElementSibling.addEventListener('click', function () {
+    if(window.innerWidth < 576) {
+      dropdownMenu.classList.add('show');
+      toggleNavbar.classList.add('hide');
+    }
+  });
+  
+  const dropdownClose = dropdownMenu.querySelector('.dropdown-close');
+  dropdownClose.addEventListener('click', function () {
+    if(window.innerWidth < 576) {
+      dropdownMenu.classList.remove('show');
+      toggleNavbar.classList.remove('hide');
+    }
+  });
+});
 
-
+// BOTÓN HAMBURGUESA / CLOSE  --MENÚ
 toggleNavbar.addEventListener('click', function () {
 	if(window.innerWidth < 576) {
 		navMenu.classList.toggle('show');
 
 		if(navMenu.classList.contains('show')) {
-			this.classList.replace('bx-menu', 'bx-x');
+			this.classList.replace('bi-list', 'bi-x-circle-fill');
 		} else {
-			this.classList.replace('bx-x', 'bx-menu');
+			this.classList.replace('bi-x-circle-fill', 'bi-list');
 		}
 	}
 })
