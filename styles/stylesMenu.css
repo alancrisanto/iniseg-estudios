@@ -38,7 +38,7 @@ nav .brand {
 }
 nav .nav-menu {
 	display: flex;
-	grid-gap: 36px;
+	grid-gap: 1rem;
 	margin-bottom: 0;
 }
 nav .nav-menu > li {
