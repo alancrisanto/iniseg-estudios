@@ -80,7 +80,7 @@ nav .nav-menu > li:focus > a::after {
 
 nav .nav-menu > li:hover > a,
 nav .nav-menu > li:focus > a {
-	color: var(--blue);
+	color: var(--light-blue);
 	text-decoration: underline;
 }
 
@@ -174,14 +174,17 @@ nav .nav-menu > li .dropdown-menu .right-section .dropdown-links {
 	flex-grow: 1;
 	flex-basis: 300px;
 } */
-/* --MODIFICAR a POR div ####### AVANCESSSSS*/ 
+
 nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a {
 	display: flex;
 	align-items: center;
 	grid-gap: 16px;
-	color: #000;
+	color: #050505;
 	transition: all.3s ease;
 }
+
+/* --- ESTILO EFECTO LINEA SUBMENU */
+
 /* nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a .bx {
 	min-width: 50px;
 	height: 50px;
@@ -193,6 +196,7 @@ nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a {
 	background: #f5f5f5;
 	transition: all.3s ease;
 } */
+
 nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li h5 {
 	font-size: 14px;
 	font-weight: 700;
@@ -204,14 +208,6 @@ nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li h5 {
 nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a{
 	font-size: 14px;
 	color: var(--dark-blue);
-}
-
-nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a:hover{
-	color: var(--main-yellow);
-}
-
-nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a:hover h5 {
-	color: var(--main-yellow);
 }
 
 /* nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a p {

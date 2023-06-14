@@ -14,7 +14,7 @@
 	gap: 1rem;
 	justify-content: center;
 	color: white;
-	font-size: 1.2rem;
+	/* font-size: 1.2rem; */
   margin-bottom: 1rem;
 }
 
@@ -34,26 +34,44 @@
 /* -- BOTÓN SOLICTAR INFORMACIÓN */
 .header-info-btn-link {
 	background-color: white;
-	padding: 0.5rem 1rem;
-	border-radius: 10px;
+	padding: 0.5rem 0.6rem;
+	border-radius: 5px;
 }
 
 .header-info-btn-link a {
   color: var(--main-blue);
   font-size: 0.7rem;
-  font-weight: 700;
+  font-weight: 500;
 }
+
+.header-info-btn-link:hover {
+	background-color: var(--main-blue);
+  border: 1px solid white;
+}
+.header-info-btn-link:hover a {
+  color: white;
+}
+
+
 
 /* --- BOTÓN AULA VIRTUAL */
 .header-info-aula-btn{
   background-color: var(--dark-yellow);
-  padding: 0.5rem;
-  border-radius: 10px;
+  padding: 0.3rem 0.5rem;
+  border-radius: 16px;
+}
+
+.header-info-aula-btn:hover {
+  background-color: white;
+}
+
+.header-info-aula-btn:hover a{
+  color: var(--dark-blue);
 }
 
 .header-info-aula-btn a {
   color: white;
-  font-size: 0.7rem;
+  font-size: 0.81rem;
   font-weight: 700;
 }
 
@@ -61,6 +79,7 @@
 
 .header-info-lang-icon {
   color: white;
+  font-size: 1.5rem;
 }
 
 .info-lang {
@@ -353,6 +372,11 @@
   }
 }
 @media screen and (min-width: 375px ) {
+
+  .header-info-aula-btn{
+    padding: 0.3rem 1.25rem;
+  }
+
   .main-cont-mobile-text {
     left: 5rem;
   }
@@ -369,11 +393,7 @@
   }
 
   .header-info-aula-btn a, .header-info-btn-link a {
-    font-size: 1rem;
-  }
-
-  .header-info-lang-icon {
-    font-size: 1.8rem;
+    font-size: 0.75rem;
   }
 
   .main-cont-mobile-text {
