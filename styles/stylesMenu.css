@@ -113,7 +113,7 @@ nav .nav-menu > li .dropdown-menu .container {
 	display: flex;
 	grid-gap: 2rem;
 	flex-wrap: wrap;
-	padding: 24px 16px 40px;
+	padding: 1rem;
 	justify-content: center;
 }
 nav .nav-menu > li .dropdown-menu .container .dropdown-close .bi {
@@ -150,7 +150,7 @@ nav .nav-menu > li .dropdown-menu .left-section .btn-see-all:hover {
 }
 nav .nav-menu > li .dropdown-menu .right-section {
 	flex-grow: 1;
-	flex-basis: 700px;
+	/* flex-basis: 700px; */
 }
 nav .nav-menu > li .dropdown-menu .right-section h3 {
 	font-size: 18px;
@@ -159,12 +159,13 @@ nav .nav-menu > li .dropdown-menu .right-section h3 {
 }
 nav .nav-menu > li .dropdown-menu .right-section .dropdown-links {
 	display: flex;
-	grid-gap: 1rem;
+	grid-gap: 3.5rem;
+	justify-content: center;
 }
-nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li {
+/* nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li {
 	flex-grow: 1;
 	flex-basis: 300px;
-}
+} */
 /* --MODIFICAR a POR div ####### AVANCESSSSS*/ 
 nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a {
 	display: flex;
@@ -252,10 +253,16 @@ nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a:hover p {
 		left: 100%;	
 		transition: all .3s ease;
 	}
+	nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li{
+		flex-grow: 1;
+	}
 	nav .nav-menu > li .dropdown-menu .right-section .dropdown-links {
-		flex-wrap: wrap;
+		/* flex-wrap: wrap; */
 		overflow: scroll;
 		max-height: calc(100vh - 320px);
+		flex-direction: column;
+		justify-content: unset;
+		gap: 2rem;
 	}
 	nav .nav-menu > li .dropdown-menu.show {
 		left: 0;
