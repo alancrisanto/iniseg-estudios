@@ -5,7 +5,7 @@ const navMenu = document.querySelector('.nav-menu');
 
 dropdownMenus.forEach(function(dropdownMenu) {
   dropdownMenu.previousElementSibling.addEventListener('click', function () {
-    if(window.innerWidth < 576) {
+    if(window.innerWidth < 992) {
       dropdownMenu.classList.add('show');
       toggleNavbar.classList.add('hide');
     }
@@ -13,7 +13,7 @@ dropdownMenus.forEach(function(dropdownMenu) {
   
   const dropdownClose = dropdownMenu.querySelector('.dropdown-close');
   dropdownClose.addEventListener('click', function () {
-    if(window.innerWidth < 576) {
+    if(window.innerWidth < 992) {
       dropdownMenu.classList.remove('show');
       toggleNavbar.classList.remove('hide');
     }
@@ -22,7 +22,7 @@ dropdownMenus.forEach(function(dropdownMenu) {
 
 // BOTÓN HAMBURGUESA / CLOSE  --MENÚ
 toggleNavbar.addEventListener('click', function () {
-	if(window.innerWidth < 576) {
+	if(window.innerWidth < 992) {
 		navMenu.classList.toggle('show');
 
 		if(navMenu.classList.contains('show')) {
