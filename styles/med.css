@@ -36,7 +36,7 @@
   }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 994px) {
     /* -- ICONO BACK MOVIL */
     .dropdown-close{
       display: none;
