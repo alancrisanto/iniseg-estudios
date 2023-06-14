@@ -19,6 +19,10 @@
 	font-family: var(--open-sans);
 }
 
+::-webkit-scrollbar {
+	display: none;
+}
+
 
 a {
 	text-decoration: none !important;
