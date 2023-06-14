@@ -61,28 +61,35 @@ nav .nav-menu > li > a {
 /* -- EFECTO HOVER SUB LÍNEA */
 nav .nav-menu > li > a::after {
 	content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--dark-yellow);
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-nav .nav-menu > li > a:hover::after {
-	transform: scaleX(1);
-  transform-origin: bottom left
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: var(--dark-yellow);
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
 }
 
+nav .nav-menu > li:hover > a::after,
+nav .nav-menu > li:focus > a::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+nav .nav-menu > li:hover > a,
+nav .nav-menu > li:focus > a {
+	color: var(--blue);
+	text-decoration: underline;
+}
+
+/* -- COLOR OSCURO EN INDICES AL HACER HOVER SOBRE EL NAV */
 nav:hover .nav-menu > li > a {
 	color: var(--dark-blue);
 	transition: all .3s ease;
 }
-nav .nav-menu > li:hover > a {
-	color: var(--blue);
-}
+
 /* --- ESTILO CHEVRON RIGHT ICON */
 nav .nav-menu > li > .bi {
 	transition: all .3s ease;
@@ -109,6 +116,7 @@ nav .nav-menu > li:hover .dropdown-menu {
 	display: block;
 	border-radius: 0;
 }
+
 nav .nav-menu > li .dropdown-menu .container {
 	display: flex;
 	grid-gap: 2rem;
@@ -197,21 +205,24 @@ nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a{
 	font-size: 14px;
 	color: var(--dark-blue);
 }
+
 nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a:hover{
 	color: var(--main-yellow);
 }
-nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a p {
+
+nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a:hover h5 {
+	color: var(--main-yellow);
+}
+
+/* nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a p {
 	font-size: 14px;
 	color: var(--grey);
 	transition: all.3s ease;
-}
+} */
 /* nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a:hover .bx {
 	background: var(--blue);
 	color: var(--light-blue);
 } */
-nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a:hover h5 {
-	color: var(--main-yellow);
-}
 /* nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a:hover p {
 	color: #000;
 } */
