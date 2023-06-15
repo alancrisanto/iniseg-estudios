@@ -15,6 +15,10 @@
     display: none;
   }
 
+   .header-video {
+    margin-top: -100px;
+  }
+
   /* CONTENEDOR MAIN FILTER Y CARDS */
 
   .main-container-body{

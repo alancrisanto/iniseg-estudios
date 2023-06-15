@@ -6,7 +6,7 @@
 
 .header-info-container {
   background-color: var(--main-blue);
-	padding: 1rem;
+	padding: 0.5rem 1rem;
 }
 
 .header-info-icons-mobile{
@@ -15,7 +15,7 @@
 	justify-content: center;
 	color: white;
 	/* font-size: 1.2rem; */
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .header-info-icons-desktop, .header-info-phone{
