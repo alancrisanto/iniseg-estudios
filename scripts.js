@@ -35,6 +35,20 @@ toggleNavbar.addEventListener('click', function () {
 
 
 // ALTERNAR IMAGENES NAVBAR
+// var logo = document.querySelector('.logo');
+// var images = [
+//   'assets/images/menu/logo2-azul.png',
+//   'assets/images/menu/nombre-azul.png',
+// ];
+// var currentImageIndex = 0;
+
+// function changeLogo() {
+//   logo.src = images[currentImageIndex];
+//   currentImageIndex = (currentImageIndex + 1) % images.length;
+// }
+
+// setInterval(changeLogo, 2500);
+
 var logo = document.querySelector('.logo');
 var images = [
   'assets/images/menu/logo2-azul.png',
@@ -43,9 +57,12 @@ var images = [
 var currentImageIndex = 0;
 
 function changeLogo() {
-  logo.src = images[currentImageIndex];
-  currentImageIndex = (currentImageIndex + 1) % images.length;
+  logo.classList.add('hidden');
+  setTimeout(function() {
+    logo.src = images[currentImageIndex];
+    logo.classList.remove('hidden');
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+  }, 1000);
 }
 
-setInterval(changeLogo, 2500);
-
+setInterval(changeLogo, 3500);
