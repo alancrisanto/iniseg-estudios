@@ -314,7 +314,7 @@
     </header>
     <main class="main-container">
       <div class="main-container-head">
-        <h1>Másteres Oficiales</h1>
+        <h1 class="main-title">Másteres Oficiales</h1>
         <span>Formación Online De Calidad Para Especializarte En Tú Área Profesional</span>
       </div>
       <!-- BANNER IMAGEN MÓVIL -->
@@ -365,19 +365,19 @@
               <h5>Tipo de Titulación</h5>
               <form action="#">
                 <label for="master-oficial">
-                  <input id="master-oficial" name="master-oficial" type="checkbox">
+                  <input class="checkbox-titulación" id="master-oficial" name="master-oficial" type="checkbox" onclick="seleccionarCheckbox(event), actualizarTitulo()">
                   Másteres Oficiales
                 </label>
                 <label for="master-executive">
-                  <input id="master-executive" name="master-executive" type="checkbox">
+                  <input class="checkbox-titulación" id="master-executive" name="master-executive" type="checkbox" onclick="seleccionarCheckbox(event), actualizarTitulo()">
                   Másteres Executives
                 </label>
                 <label for="master-profesional">
-                  <input id="master-profesional" name="master-profesional" type="checkbox">
+                  <input class="checkbox-titulación" id="master-profesional" name="master-profesional" type="checkbox" onclick="seleccionarCheckbox(event), actualizarTitulo()">
                   Másteres Profesionales
                 </label>
                 <label for="diplomado-superior">
-                  <input id="diplomado-superior" name="diplomado-superior" type="checkbox">
+                  <input class="checkbox-titulación" id="diplomado-superior" name="diplomado-superior" type="checkbox" onclick="seleccionarCheckbox(event), actualizarTitulo()">
                   Diplomados Superiores Y Cursos Técnicos
                 </label>
               </form>
