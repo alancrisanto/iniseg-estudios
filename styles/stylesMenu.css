@@ -9,7 +9,7 @@ nav {
 	background: transparent;
 	height: 100px;
 	position: relative;
-	padding-top: 0;
+	padding-top: 0 !important;
 	/* padding: 1rem 0; */
 }
 
