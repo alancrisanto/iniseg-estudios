@@ -176,10 +176,21 @@ nav .nav-menu > li .dropdown-menu .right-section .dropdown-links {
 	flex-basis: 300px;
 } */
 
-nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a {
+nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li .dropdown-links-items{
 	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+
+nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li hr{
+	width: 100%;
+	margin: 0.5rem 0;
+}
+
+nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a {
+	/* display: flex;
 	align-items: center;
-	grid-gap: 16px;
+	grid-gap: 16px; */
 	transition: all.3s ease;
 	font-size: 14px;
 	color: var(--dark-blue);
