@@ -31,6 +31,15 @@
   margin: 0 auto;
 }
 
+.logo {
+  transition: opacity 1s ease-in-out;
+}
+
+.logo.hidden {
+  opacity: 0.4;
+}
+
+
 /* -- BOTÓN SOLICTAR INFORMACIÓN */
 .header-info-btn-link {
 	background-color: white;
