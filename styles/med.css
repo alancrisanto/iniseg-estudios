@@ -59,8 +59,11 @@
     display: flex;
     gap: 1rem;
     justify-content: center;
-    color: white;
     font-size: 1rem;
+  }
+
+  .header-info-icons-desktop a{
+    color: white;
   }
 
   /* HEADER VIDEO */
