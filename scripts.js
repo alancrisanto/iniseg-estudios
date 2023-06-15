@@ -78,5 +78,9 @@ function actualizarTitulo() {
     }
   }
 
+  if (nuevoTitulo === "") {
+    nuevoTitulo = "Másteres Oficiales";
+  }
+
   titulo.textContent = nuevoTitulo;
 }
