@@ -9,6 +9,7 @@ nav {
 	background: transparent;
 	height: 100px;
 	position: relative;
+	padding-top: 0;
 	/* padding: 1rem 0; */
 }
 
@@ -258,10 +259,29 @@ nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li h5 {
 	color: #000;
 } */
 
+/* --- STICKY MENU */
+header .sticky {
+	position: fixed;
+  top: 0;
+  width: 100%;
+	background-color: white;
+	z-index: 100;
+	padding-top: 0;
+}
+
+header .sticky .nav-menu > li > a {
+	color: var(--dark-blue);
+	transition: all .3s ease;
+}
 
 @media screen and (min-width: 280px) and (max-width: 424px) {
 	nav .nav-menu {
 		top: 188px !important;
+	}
+
+/* --STICKY MOVIL MENU */
+	nav .nav-menu-sticky {
+		top: 100px !important;
 	}
 }
 
@@ -269,11 +289,19 @@ nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li h5 {
 	nav .nav-menu {
 		top: 188px !important;
 	}
+
+	nav .nav-menu-sticky {
+		top: 100px !important;
+	}
 }
 
 @media screen and (max-width: 993px) {
 	nav {
 		background: white;
+		padding-top: 0 !important;
+	}
+	nav .nav-menu-sticky {
+		top: 100px !important;
 	}
 	nav .nav-menu {
 		position: fixed;

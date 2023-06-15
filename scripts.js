@@ -1,3 +1,21 @@
+// STICKY NAVBAR
+window.onscroll = function() {
+  myFunction()
+};
+
+let navbar = document.querySelector('.navbar');
+let navMenuShow = document.querySelector('.nav-menu')
+let sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+    navMenuShow.classList.add('nav-menu-sticky')
+  } else {
+    navbar.classList.remove("sticky");
+    navMenuShow.classList.remove('nav-menu-sticky')
+  }
+}
 // FUNCIONES PARA BOTONES MENU RESPONSIVE
 const dropdownMenus = document.querySelectorAll('.dropdown-menu');
 const toggleNavbar = document.querySelector('.toggle-navbar');
