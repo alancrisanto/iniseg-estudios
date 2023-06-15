@@ -34,21 +34,6 @@ toggleNavbar.addEventListener('click', function () {
 })
 
 
-// ALTERNAR IMAGENES NAVBAR
-// var logo = document.querySelector('.logo');
-// var images = [
-//   'assets/images/menu/logo2-azul.png',
-//   'assets/images/menu/nombre-azul.png',
-// ];
-// var currentImageIndex = 0;
-
-// function changeLogo() {
-//   logo.src = images[currentImageIndex];
-//   currentImageIndex = (currentImageIndex + 1) % images.length;
-// }
-
-// setInterval(changeLogo, 2500);
-
 var logo = document.querySelector('.logo');
 var images = [
   'assets/images/menu/logo2-azul.png',
