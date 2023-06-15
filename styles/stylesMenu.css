@@ -187,6 +187,8 @@ nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li hr{
 	margin: 0.5rem 0;
 }
 
+/* --- ESTILO EFECTO LINEA SUBMENU */
+
 nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a {
 	/* display: flex;
 	align-items: center;
@@ -194,7 +196,7 @@ nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a {
 	transition: all.3s ease;
 	font-size: 14px;
 	color: var(--dark-blue);
-	padding-bottom: 0.5rem;
+	padding-bottom: 0.2rem;
 	position: relative;
 }
 
@@ -216,7 +218,7 @@ nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li a:hover::aft
 	transform-origin: bottom left;
 }
 
-/* --- ESTILO EFECTO LINEA SUBMENU */
+
 
 
 nav .nav-menu > li .dropdown-menu .right-section .dropdown-links li h5 {
