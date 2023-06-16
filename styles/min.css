@@ -236,6 +236,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 1.5rem;
 }
 
@@ -405,6 +406,12 @@
   .main-cont-mobile-text {
     left: 4rem;
   }
+
+  .img-bg-red{
+    right: 16px;
+    border-right: 18px solid var(--red);
+    border-bottom: 45px solid transparent;
+  }
 }
 @media screen and (min-width: 375px ) {
 
@@ -426,7 +433,7 @@
   }
   
   .img-bg-red{
-    right: 16px;
+    right: 18px;
     border-right: 17px solid var(--red);
     border-bottom: 45px solid transparent;
   }
