@@ -15,7 +15,7 @@
     display: none;
   }
 
-   .header-video {
+  .header-video {
     margin-top: -100px;
   }
 
@@ -36,6 +36,13 @@
     width: 100%;
     height: 250px;
   }
+
+
+  /* .img-bg-blue {
+  
+  }
+  .img-bg-red {
+  } */
 
   /* CARD TEXT IMG*/
   .course-img-text {
