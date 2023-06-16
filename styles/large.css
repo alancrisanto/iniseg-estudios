@@ -15,7 +15,7 @@
     display: none;
   }
 
-   .header-video {
+  .header-video {
     margin-top: -100px;
   }
 
@@ -37,18 +37,23 @@
     height: 250px;
   }
 
+  .img-bg-red{
+    right: 17px;
+    border-right: 17px solid var(--red);
+  }
+
   /* CARD TEXT IMG*/
   .course-img-text {
-    bottom: 0;
+    bottom: 3;
     padding-left: 1.5rem;
   }
 
   .course-img-text p:nth-child(3){
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
 
   .course-img-text p{
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 0.5rem;
   }
 
@@ -135,11 +140,18 @@
 
 @media screen and (min-width:1280px) {
   .course-img-text p:nth-child(3){
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .course-img-text{
     padding-right: 0.9rem;
-    bottom: -5px;
+    bottom: 4px;
   }
+
+    /* -- IMG CARDS */
+    .img-bg-red{
+      right: 21px;
+      border-right: 18px solid var(--red);
+      border-bottom: 57px solid transparent;
+    }
 }

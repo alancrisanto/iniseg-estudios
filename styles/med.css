@@ -29,12 +29,12 @@
   }
 
   .course-img-text p:nth-child(3){
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
     line-height: 1.3rem;
   }
 
   .course-img-text p {
-    line-height: 2.5rem;
+    /* line-height: 2.5rem; */
     font-size: 1.5rem;
     font-weight: 300;
   }
@@ -98,14 +98,25 @@
     font-size: 1.8rem;
   }
 
-  .course-img-text p {
-    font-size: 2.5rem;
+  /* -- IMG CARDS */
+  .img-bg-blue{
+    border-bottom: 6rem solid #222C3F;
+  }
+  
+  .img-bg-red{
+    right: 20px;
+    border-right: 18px solid var(--red);
+    border-bottom: 57px solid transparent;
   }
 
-  .course-img-text p:nth-child(3){
+  /* .course-img-text p {
+    font-size: 2.5rem;
+  } */
+
+  /* .course-img-text p:nth-child(3){
     font-size: 1.6rem;
     line-height: normal;
-  }
+  } */
 
   .main-col-course-detail {
     min-width: 500px;

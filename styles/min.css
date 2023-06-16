@@ -236,6 +236,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 1.5rem;
 }
 
@@ -253,10 +254,33 @@
 
 .course-img-text{
   position: absolute;
-  bottom: 0px;
+  bottom: 5px;
   padding: 0.5rem 0.8rem 2px;
   color: white;
+  z-index: 100;
+  max-width: 90%;
 }
+
+.img-bg-blue{
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 95%;
+  opacity: 0.9;
+  overflow: hidden;
+  border-right: 25px solid transparent;
+  border-bottom: 4.3rem solid #222C3F;
+}
+
+.img-bg-red{
+  position: absolute;
+  bottom: 0px;
+  right: 13px;
+  border-right: 15px solid var(--red);
+  transform: skew(177deg);
+  border-bottom: 35px solid transparent;
+}
+
 
 .course-img-text p{
   margin: 0;
@@ -382,6 +406,12 @@
   .main-cont-mobile-text {
     left: 4rem;
   }
+
+  .img-bg-red{
+    right: 16px;
+    border-right: 18px solid var(--red);
+    border-bottom: 45px solid transparent;
+  }
 }
 @media screen and (min-width: 375px ) {
 
@@ -394,7 +424,18 @@
   }
 
   .course-img-text{
-    padding: 1.5rem 0.8rem 8px;
+    padding: 1.5rem 2rem 8px;
+    bottom: 2px;
+  }
+
+  .img-bg-blue{
+    border-bottom: 4.7rem solid #222C3F;
+  }
+  
+  .img-bg-red{
+    right: 18px;
+    border-right: 17px solid var(--red);
+    border-bottom: 45px solid transparent;
   }
 }
 
@@ -412,8 +453,19 @@
     left: 6.5rem;
   }
 
+  /* -- CONTENEDOR IMG CARD */
   .course-img-text{
     padding: 1.5rem 0.8rem 8px;
+  }
+
+  .img-bg-blue{
+    border-bottom: 5.3rem solid #222C3F;
+  }
+  
+  .img-bg-red{
+    right: 19px;
+    border-right: 17px solid var(--red);
+    border-bottom: 47px solid transparent;
   }
 
   .course-img-text p{
