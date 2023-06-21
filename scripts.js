@@ -102,3 +102,32 @@ function actualizarTitulo() {
 
   titulo.textContent = nuevoTitulo;
 }
+
+// ALTERNAR COLORES EN CARDS
+
+const bgBlues = document.querySelectorAll('.img-bg-blue');
+const bgReds = document.querySelectorAll('.img-bg-red');
+
+bgBlues.forEach((blue, index) => {
+  if (index % 3 === 0) {
+    blue.style.borderBottomColor = 'var(--dark-blue)';
+  } else if (index % 3 === 1) {
+    blue.style.borderBottomColor = 'var(--main-yellow)';
+    blue.style.opacity = '0.4'
+  } else {
+    blue.style.borderBottomColor = 'var(--red)';
+    blue.style.opacity = '0.7'
+  }
+});
+
+bgReds.forEach((red, index) => {
+  if (index % 3 === 0) {
+    red.style.borderRightColor = 'var(--red)';
+  } else if (index % 3 === 1) {
+    red.style.borderRightColor = 'var(--blue-card)';
+  } else {
+    red.style.borderRightColor = 'var(--main-yellow)';
+    red.style.opacity = '0.7'
+  }
+});
+
