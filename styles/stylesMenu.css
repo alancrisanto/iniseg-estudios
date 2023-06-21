@@ -150,7 +150,7 @@ nav .nav-menu > li .dropdown-menu .left-section p {
 }
 nav .nav-menu > li .dropdown-menu .left-section .btn-see-all {
 	padding: 12px 28px;
-	background: var(--blue);
+	/* background: var(--blue); */
 	border-radius: 8px;
 	color: #fff;
 	transition: all .3s ease;

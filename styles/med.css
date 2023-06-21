@@ -100,7 +100,7 @@
 
   /* -- IMG CARDS */
   .img-bg-blue{
-    border-bottom: 6rem solid #222C3F;
+    border-bottom: 5.4rem solid var(--dark-blue);
   }
   
   .img-bg-red{
