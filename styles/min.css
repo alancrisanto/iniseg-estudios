@@ -248,59 +248,55 @@
 }
 
 /* --- CARD ECAMPUS IMG */
+
+/* Figure */
 .main-col-course-image{
   position: relative;
+  display: grid;
+  width: min(90vw, 450px);
 }
 
+.main-col-course-image > * {
+  grid-area: 1 / 1;
+}
+
+/* FigCaption */
 .course-img-text{
-  position: absolute;
-  bottom: 5px;
-  padding: 0.5rem 0.8rem 2px;
+  --red-triangle-width: 5%;
+  position: relative;
+  align-self: end;
+  box-sizing: border-box;
+  width: 90%;
+  padding: 0.6rem;
+  background-color: var(--dark-blue);
+  clip-path: polygon(0 0, 90% 0, calc(100% - var(--red-triangle-width)) 50%, 100% 50%, 100% 100%, 0 100%);
   color: white;
-  z-index: 1;
-  max-width: 90%;
 }
 
-.img-bg-blue{
+.course-img-text::after{
+  content: "";
   position: absolute;
-  bottom: 0px;
-  left: 0;
-  width: 95%;
-  opacity: 0.9;
-  overflow: hidden;
-  border-right: 25px solid transparent;
-  border-bottom: 4.3rem solid #222C3F;
+  display: block;
+  inset: 50% 0 0 auto;
+  width: var(--red-triangle-width);
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  background-color: var(--pseudo-element-color);
 }
 
-.img-bg-red{
-  position: absolute;
-  bottom: 0px;
-  right: 13px;
-  border-right: 15px solid var(--red);
-  transform: skew(177deg);
-  border-bottom: 35px solid transparent;
+.course-img-text p:first-of-type {
+  --gap: 1rem;
+  width: 10rem;
+  border-bottom: 2px solid;
+  font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
+.course-img-text p:last-of-type {
+  font-weight: bold;
+  font-size: clamp(0.7rem, 3.2vw, 1rem);
+}
 
 .course-img-text p{
-  margin: 0;
-  line-height: 1rem;
   text-shadow: 2px 0px 2px black;
-}
-
-.course-img-text p:nth-child(3){
-  font-size: 0.75rem;
-  margin-top: 3px;
-  font-weight: 700;
-  margin-bottom: 0;
-  text-shadow: 2px 0px 3px black;
-}
-
-.course-img-text hr{
-  width: 100%;
-  margin: 0;
-  opacity: 1;
-  
 }
 
 .course-detail-img img {
@@ -425,11 +421,6 @@
     left: 5rem;
   }
 
-  .course-img-text{
-    padding: 1.5rem 2rem 8px;
-    bottom: 2px;
-  }
-
   .img-bg-blue{
     border-bottom: 4.7rem solid #222C3F;
   }
@@ -457,7 +448,7 @@
 
   /* -- CONTENEDOR IMG CARD */
   .course-img-text{
-    padding: 1.5rem 0.8rem 8px;
+    padding-left: 1.5rem;
   }
 
   .img-bg-blue{
@@ -468,17 +459,5 @@
     right: 19px;
     border-right: 17px solid var(--red);
     border-bottom: 47px solid transparent;
-  }
-
-  .course-img-text p{
-    margin-bottom: 0.5rem;
-    line-height: 1rem;
-    font-weight: 300;
-    font-size: 1.3rem;
-  }
-
-  .course-img-text p:nth-child(3) {
-    margin-bottom: 2px;
-    font-size: 1rem;
   }
 }

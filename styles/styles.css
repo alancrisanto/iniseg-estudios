@@ -30,6 +30,10 @@ a {
 	text-decoration: none !important;
 }
 
+p{
+	margin: 0 !important;
+}
+
 li {
 	list-style: none !important;
 }

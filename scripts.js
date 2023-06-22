@@ -105,29 +105,20 @@ function actualizarTitulo() {
 
 // ALTERNAR COLORES EN CARDS
 
-const bgBlues = document.querySelectorAll('.img-bg-blue');
-const bgReds = document.querySelectorAll('.img-bg-red');
+const bgBlues = document.querySelectorAll('.course-img-text');
 
 bgBlues.forEach((blue, index) => {
   if (index % 3 === 0) {
-    blue.style.borderBottomColor = 'var(--dark-blue)';
+    blue.style.backgroundColor = 'rgba(34,44,63,0.7)';
+    blue.style.setProperty('--pseudo-element-color', 'var(--red');
   } else if (index % 3 === 1) {
-    blue.style.borderBottomColor = 'var(--main-yellow)';
-    blue.style.opacity = '0.4'
+    blue.style.backgroundColor = 'rgba(251,192,9,0.5)';
+    blue.style.setProperty('--pseudo-element-color', 'var(--blue-card');
   } else {
-    blue.style.borderBottomColor = 'var(--red)';
-    blue.style.opacity = '0.7'
+    blue.style.backgroundColor = 'rgba(222,29,39,0.7)';
+    blue.style.setProperty('--pseudo-element-color', 'var(--main-yellow');
   }
 });
 
-bgReds.forEach((red, index) => {
-  if (index % 3 === 0) {
-    red.style.borderRightColor = 'var(--red)';
-  } else if (index % 3 === 1) {
-    red.style.borderRightColor = 'var(--blue-card)';
-  } else {
-    red.style.borderRightColor = 'var(--main-yellow)';
-    red.style.opacity = '0.7'
-  }
-});
+
 
