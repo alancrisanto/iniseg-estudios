@@ -42,21 +42,6 @@
     border-right: 17px solid var(--red);
   }
 
-  /* CARD TEXT IMG*/
-  .course-img-text {
-    bottom: 3;
-    padding-left: 1.5rem;
-  }
-
-  .course-img-text p:nth-child(3){
-    font-size: 0.9rem;
-  }
-
-  .course-img-text p{
-    font-size: 1.2rem;
-    line-height: 0.5rem;
-  }
-
   .main-col-courses-card{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -139,14 +124,6 @@
 }
 
 @media screen and (min-width:1280px) {
-  .course-img-text p:nth-child(3){
-    font-size: 1rem;
-  }
-
-  .course-img-text{
-    padding-right: 0.9rem;
-    bottom: 4px;
-  }
 
     /* -- IMG CARDS */
     .img-bg-red{
