@@ -387,6 +387,19 @@
   color: var(--dark-blue);
 }
 
+/* -- BOTON VER MÁS */
+.btn-ver-mas {
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.btn-ver-mas a {
+  background-color: var(--blue);
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+
 /* -- IMAGEN GRUPO INVESTIGACION MÓVIL */
 
 .main-img-mob{
