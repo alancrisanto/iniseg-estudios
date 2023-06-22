@@ -269,7 +269,6 @@
   width: 90%;
   padding: 0.6rem;
   background-color: var(--dark-blue);
-  opacity: 0.7;
   clip-path: polygon(0 0, 90% 0, calc(100% - var(--red-triangle-width)) 50%, 100% 50%, 100% 100%, 0 100%);
   color: white;
 }
@@ -281,7 +280,7 @@
   inset: 50% 0 0 auto;
   width: var(--red-triangle-width);
   clip-path: polygon(100% 0, 0 0, 100% 100%);
-  background-color: hsl(357 77% 49%);
+  background-color: var(--pseudo-element-color);
 }
 
 .course-img-text p:first-of-type {
