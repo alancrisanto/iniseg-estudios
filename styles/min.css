@@ -246,6 +246,7 @@
 .filtrar-mobile-text .bi {
   font-size: 2rem;
   color: var(--main-blue);
+  transform: rotate(180deg);
 }
 
 .filtrar-mobile-text h2{
