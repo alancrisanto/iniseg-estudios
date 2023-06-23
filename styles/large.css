@@ -90,6 +90,11 @@
     overflow:hidden;
   }
 
+  /* -- FILTER MESSAGE */
+  .filtrar-mobile-text{
+    display: none;
+  }
+
   /* IMAGEN BANNER BECA */
 
   .main-container-img-desktop {
