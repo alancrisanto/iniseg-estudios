@@ -90,6 +90,14 @@
     overflow:hidden;
   }
 
+  .filter-title-mobile{
+    display: none;
+  }
+
+  .filter-title-desktop{
+    display: block;
+  }
+
   /* -- FILTER MESSAGE */
   .filtrar-mobile-text{
     display: none;

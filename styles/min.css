@@ -164,13 +164,13 @@
 .main-filter-title h2 {
   color: var(--main-yellow);
   font-weight: 50;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
 .main-filter-title h2 span {
   color: var(--main-yellow);
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 2vw, 2.5rem);
 }
 
 
@@ -229,6 +229,10 @@
   margin-bottom: 1.5rem;
 }
 
+.filter-title-desktop{
+  display: none;
+}
+
 .filtrar-mobile-text {
   /* border: 1px solid #d1d7dc; */
   padding: 1.6rem;
@@ -240,7 +244,6 @@
   background: #ffffff;
   box-shadow:  5px 5px 25px #ededed,
               -5px -5px 25px #ffffff;
-
 }
 
 .filtrar-mobile-text .bi {
