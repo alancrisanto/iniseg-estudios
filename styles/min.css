@@ -120,12 +120,12 @@
 .main-container-head span {
   font-size: 1.25rem;
 }
-/* --IMAGEN BANNER MOBILE */
+/* --IMAGEN BANNER MOBILE
 .main-container-img-mobile{
   display: block;
   text-align: center;
   position: relative;
-}
+} */
 
 /* --IMAGEN BANNER TEXT MOBILE */
 .main-cont-mobile-text{
@@ -164,13 +164,13 @@
 .main-filter-title h2 {
   color: var(--main-yellow);
   font-weight: 50;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
 .main-filter-title h2 span {
   color: var(--main-yellow);
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 2vw, 2.5rem);
 }
 
 
@@ -226,7 +226,34 @@
 
 /* --- BOTÓN FILTRAR */
 .filtrar-mobile-btn{
-  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-title-desktop{
+  display: none;
+}
+
+.filtrar-mobile-text {
+  /* border: 1px solid #d1d7dc; */
+  padding: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0px;
+  background: #ffffff;
+  box-shadow:  5px 5px 25px #ededed,
+              -5px -5px 25px #ffffff;
+}
+
+.filtrar-mobile-text .bi {
+  font-size: 2rem;
+  color: var(--main-blue);
+  transform: rotate(180deg);
+}
+
+.filtrar-mobile-text h2{
+  font-size: clamp(0.85rem, 2vw, 1.5rem);
 }
 
 

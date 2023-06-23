@@ -11,9 +11,9 @@
     font-size: 0.85rem;
   }
 
-  .main-container-img-mobile {
+  /* .main-container-img-mobile {
     display: none;
-  }
+  } */
 
   .header-video {
     margin-top: -100px;
@@ -88,6 +88,19 @@
 
   .main-col-filters {
     overflow:hidden;
+  }
+
+  .filter-title-mobile{
+    display: none;
+  }
+
+  .filter-title-desktop{
+    display: block;
+  }
+
+  /* -- FILTER MESSAGE */
+  .filtrar-mobile-text{
+    display: none;
   }
 
   /* IMAGEN BANNER BECA */
