@@ -322,6 +322,7 @@ header .sticky .nav-menu > li > a {
 	nav .nav-menu > li .dropdown-menu .container {
 		flex-direction: column;
 		padding: 2rem;
+		height: 100vh;
 	}
 	nav .nav-menu.show {
 		left: 0;
@@ -369,7 +370,7 @@ header .sticky .nav-menu > li > a {
 	nav .toggle-navbar {
 		display: block;
 		transition-delay: .3s;
-		font-size: 3.25rem;
+		font-size: 3rem;
 		color: var(--dark-blue);
 	}
 	nav .toggle-navbar.hide {
