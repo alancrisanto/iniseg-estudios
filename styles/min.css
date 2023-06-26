@@ -403,6 +403,9 @@
   margin: 1rem 0;
   width: 90%;
   text-align: center;
+  transition: all 700ms;
+  position: relative;
+  overflow: hidden;
 }
 
 .course-btn:nth-child(2){
@@ -415,9 +418,54 @@
   font-size: clamp(0.95rem, 2.5vw, 1.2rem);
 }
 
-.matricula a{
+.btn-matricula a{
   color: var(--dark-blue);
 }
+
+/* -- BOTON VER MAS INFO HOVER */
+
+.course-btn:hover {
+  color: #ffffff;
+  transform: scale(1);
+  outline: 2px solid #ffffff;
+  box-shadow: 4px 5px 17px -4px var(--dark-blue);
+}
+
+.btn-ver-info::before{
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--red);
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 700ms;
+}
+
+.btn-matricula::before{
+  content: "";
+  position: absolute;
+  left: -50px;
+  color: white;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--red);
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 700ms
+}
+
+.btn-matricula:hover a {
+  color: white;
+}
+
+.btn-ver-info:hover::before, .btn-matricula:hover::before {
+  width: 250%;
+}
+
 
 /* -- BOTON VER MÁS */
 .btn-ver-mas {
