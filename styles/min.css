@@ -403,7 +403,7 @@
   margin: 1rem 0;
   width: 90%;
   text-align: center;
-  transition: all 700ms;
+  transition: all 600ms;
   position: relative;
   overflow: hidden;
 }
@@ -426,7 +426,7 @@
 
 .course-btn:hover {
   color: #ffffff;
-  transform: scale(1);
+  transform: scale(1.1);
   outline: 2px solid #ffffff;
   box-shadow: 4px 5px 17px -4px var(--dark-blue);
 }
@@ -441,7 +441,7 @@
   background-color: var(--red);
   transform: skewX(45deg);
   z-index: -1;
-  transition: width 700ms;
+  transition: width 600ms;
 }
 
 .btn-matricula::before{
@@ -455,7 +455,7 @@
   background-color: var(--red);
   transform: skewX(45deg);
   z-index: -1;
-  transition: width 700ms
+  transition: width 600ms
 }
 
 .btn-matricula:hover a {
