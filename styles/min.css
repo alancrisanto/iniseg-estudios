@@ -459,6 +459,11 @@
   .main-cont-mobile-text {
     left: 5rem;
   }
+  
+  /* -- CONTENEDOR CARD PRICE */
+  .main-col-course-detail{
+    min-width: 100%;
+  }
 }
 
 @media screen and (min-width: 425px ) {
@@ -478,10 +483,5 @@
   /* -- CONTENEDOR IMG CARD */
   .course-img-text{
     padding-left: 1.5rem;
-  }
-
-  /* -- CONTENEDOR CARD PRICE */
-  .main-col-course-detail{
-    min-width: 100%;
   }
 }
