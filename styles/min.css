@@ -272,6 +272,7 @@
   justify-content: space-around;
   align-items: center;
   margin-top: 1rem;
+  gap: 1rem;
 }
 
 /* --- CARD ECAMPUS IMG */
@@ -280,7 +281,8 @@
 .main-col-course-image{
   position: relative;
   display: grid;
-  width: min(90vw, 450px);
+  max-width: 450px;
+  /* width: min(90vw, 450px); */
 }
 
 .main-col-course-image > * {
@@ -327,7 +329,7 @@
 }
 
 .course-detail-img img {
-  max-width: 120px;
+  max-width: 100px;
   height: auto;
 }
 
@@ -365,6 +367,7 @@
   justify-content: space-evenly;
   align-items: center;
   margin: 1rem 0;
+  gap: 1rem;
 }
 
 .course-icon-1 {
@@ -373,6 +376,7 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
+  text-align: center;
 }
 
 .course-icon-1 img {
@@ -382,6 +386,7 @@
 .course-icon-1 span {
   font-weight: 900;
   color: var(--dark-blue);
+  font-size: clamp(0.78rem, 2.5vw, 0.85rem);
 }
 
 /* ---- CARD BUTTONS */
@@ -407,7 +412,7 @@
 .course-btn a {
   color: white;
   font-weight: 900;
-  font-size: 1.3rem;
+  font-size: clamp(0.95rem, 2.5vw, 1.2rem);
 }
 
 .matricula a{
@@ -489,6 +494,11 @@
   /* -- CONTENEDOR IMG CARD */
   .course-img-text{
     padding-left: 1.5rem;
+  }
+
+  /* -- CONTENEDOR CARD PRICE */
+  .main-col-course-detail{
+    min-width: 100%;
   }
 
   .img-bg-blue{
