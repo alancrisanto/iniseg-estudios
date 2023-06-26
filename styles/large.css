@@ -58,6 +58,8 @@
     gap: 0.5rem;
   }
 
+  /* --DETALLE CARDS PRECIO */
+
   .course-detail-pricing{
     flex-direction: column;
     justify-content: start;
@@ -65,6 +67,21 @@
     gap: 1rem;
     /* padding: 0 1rem; */
   }
+
+  .course-detail-mobile{
+    display: none;
+  }
+
+  .course-detail-img img {
+    display: block;
+  }
+
+  /* -- DETALLE CARD ICONS */
+  .course-icon-1 img{
+    display: block;
+  }
+
+  /* -- DETALLE CARDS PRECIOS ANTES Y DESPUES */
 
   .price-before h6{
     font-size: 1.2rem;
@@ -76,8 +93,14 @@
   
   /* ÍCONOS PRECIOS */
   .course-detail-info-icons {
+    flex-direction: row;
     margin: 0;
     gap: 1.5rem;
+  }
+
+  /* CARD ICON TEXT SPAN */
+  .icon-text-mobile{
+    display: none;
   }
 
   /* BOTONES PRECIO */

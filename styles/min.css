@@ -269,10 +269,19 @@
 
 .course-detail-pricing {
   display: flex;
+  flex-direction: column; /*-- Vista Móvil*/
   justify-content: space-around;
   align-items: center;
   margin-top: 1rem;
   gap: 1rem;
+}
+
+.course-detail-mobile{
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  text-align: center;
+  color: var(--dark-blue);
+  font-weight: 700;
+  margin-bottom: -1rem;
 }
 
 /* --- CARD ECAMPUS IMG */
@@ -331,6 +340,7 @@
 .course-detail-img img {
   max-width: 100px;
   height: auto;
+  display: none;
 }
 
 
@@ -364,6 +374,7 @@
 
 .course-detail-info-icons{
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   margin: 1rem 0;
@@ -381,12 +392,13 @@
 
 .course-icon-1 img {
   max-width: 36px;
+  display: none;
 }
 
-.course-icon-1 span {
+.course-icon-1 p {
   font-weight: 900;
   color: var(--dark-blue);
-  font-size: clamp(0.78rem, 2.5vw, 0.85rem);
+  font-size: clamp(0.85rem, 2.5vw, 0.85rem);
 }
 
 /* ---- CARD BUTTONS */
