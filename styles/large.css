@@ -34,12 +34,11 @@
   /* CARD IMG */
   .main-col-course-image img {
     width: 100%;
-    height: 250px;
+    height: auto;
   }
 
-  .img-bg-red{
-    right: 17px;
-    border-right: 17px solid var(--red);
+  .course-img-text p:last-of-type{
+    font-size: clamp(0.7rem, 1.3vw, 1rem);
   }
 
   .main-col-courses-card{
@@ -49,25 +48,32 @@
     margin-top: 0.75rem;
     align-items: center;
     margin-bottom: 2rem;
+    gap: 1rem;
   }
 
   .main-col-course-detail{
     display: flex;
     flex-direction: row;
     min-width: 0;
+    gap: 0.5rem;
   }
 
   .course-detail-pricing{
     flex-direction: column;
     justify-content: start;
     margin-top: 0;
-    padding: 0 1rem;
+    gap: 1rem;
+    /* padding: 0 1rem; */
   }
 
   .price-before h6{
     font-size: 1.2rem;
   }
 
+  .price-now span:nth-child(1){
+    font-size: 1.3rem;
+  }
+  
   /* ÍCONOS PRECIOS */
   .course-detail-info-icons {
     margin: 0;
@@ -75,9 +81,14 @@
   }
 
   /* BOTONES PRECIO */
+  .course-detail-info-btns{
+    margin-top: 1rem;
+  }
+
   .course-btn {
     width: 100%;
     margin: 0.5rem 0;
+    padding: 0.5rem;
   }
 
   .course-btn a {
@@ -139,6 +150,9 @@
 @media screen and (min-width:1280px) {
 
     /* -- IMG CARDS */
+    .main-col-course-detail{
+      gap: 1.5rem;
+    }
     .img-bg-red{
       right: 21px;
       border-right: 19px solid var(--red);
