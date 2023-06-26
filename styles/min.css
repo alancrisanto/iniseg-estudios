@@ -449,12 +449,6 @@
   .main-cont-mobile-text {
     left: 4rem;
   }
-
-  .img-bg-red{
-    right: 16px;
-    border-right: 18px solid var(--red);
-    border-bottom: 45px solid transparent;
-  }
 }
 @media screen and (min-width: 375px ) {
 
@@ -465,15 +459,10 @@
   .main-cont-mobile-text {
     left: 5rem;
   }
-
-  .img-bg-blue{
-    border-bottom: 4.7rem solid #222C3F;
-  }
   
-  .img-bg-red{
-    right: 18px;
-    border-right: 17px solid var(--red);
-    border-bottom: 45px solid transparent;
+  /* -- CONTENEDOR CARD PRICE */
+  .main-col-course-detail{
+    min-width: 100%;
   }
 }
 
@@ -494,20 +483,5 @@
   /* -- CONTENEDOR IMG CARD */
   .course-img-text{
     padding-left: 1.5rem;
-  }
-
-  /* -- CONTENEDOR CARD PRICE */
-  .main-col-course-detail{
-    min-width: 100%;
-  }
-
-  .img-bg-blue{
-    border-bottom: 5.3rem solid #222C3F;
-  }
-  
-  .img-bg-red{
-    right: 19px;
-    border-right: 17px solid var(--red);
-    border-bottom: 47px solid transparent;
   }
 }
