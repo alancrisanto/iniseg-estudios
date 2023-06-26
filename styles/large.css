@@ -153,9 +153,4 @@
     .main-col-course-detail{
       gap: 1.5rem;
     }
-    .img-bg-red{
-      right: 21px;
-      border-right: 19px solid var(--red);
-      border-bottom: 57px solid transparent;
-    }
 }

@@ -84,16 +84,6 @@
   }
 
   /* -- IMG CARDS */
-  .img-bg-blue{
-    border-bottom: 5.4rem solid var(--dark-blue);
-  }
-  
-  .img-bg-red{
-    right: 20px;
-    border-right: 18px solid var(--red);
-    border-bottom: 57px solid transparent;
-  }
-
   .main-col-course-detail {
     min-width: 450px;
     margin: 0 auto;
