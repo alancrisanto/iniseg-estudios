@@ -1,3 +1,13 @@
+// PAGE LOADER
+
+    window.onload = function(){
+      var contCarga = document.getElementById('contenedor_carga');
+  
+      contCarga.style.visibility = 'hidden';
+      contCarga.style.opacity = '0';
+  
+  }
+
 // STICKY NAVBAR
 window.onscroll = function() {
   myFunction()
