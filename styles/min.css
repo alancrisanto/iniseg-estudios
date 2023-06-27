@@ -485,16 +485,54 @@
 
 
 /* -- BOTON VER MÁS */
-.btn-ver-mas {
-  text-align: center;
-  margin-top: 10rem;
-}
 
 .btn-ver-mas a {
-  background-color: var(--blue);
-  font-size: 1.5rem;
-  padding: 0.5rem 1rem;
   color: white;
+}
+
+.btn-ver-mas {
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--blue);
+  margin-top: 10rem;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 3px solid white;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.btn-ver-mas:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: var(--main-yellow);
+  z-index: -1;
+}
+
+.btn-ver-mas:hover, .btn-ver-mas:focus {
+  color: white;
+}
+
+.btn-ver-mas:hover:before, .btn-ver-mas:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.btn-ver-mas:active {
+  transform: scale(0.9);
 }
 
 /* -- IMAGEN GRUPO INVESTIGACION MÓVIL */
