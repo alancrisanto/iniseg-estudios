@@ -318,7 +318,17 @@
   justify-content: center;
   align-items: center;
   margin-top: 1.5rem;
+  display: none;
 }
+
+/* -- ESTILOS PARA MOSTRAR SOLO 3 ELEMENTOS AL INICIAR */
+.main-col-courses-card:nth-child(1),
+.main-col-courses-card:nth-child(2),
+.main-col-courses-card:nth-child(3){
+  display: flex;
+}
+
+
 
 .course-detail-pricing {
   display: flex;
@@ -539,16 +549,15 @@
 
 /* -- BOTON VER MÁS */
 
-.btn-ver-mas a {
+.btn-ver-mas p {
   color: white;
 }
 
 .btn-ver-mas {
   width: 200px;
-  margin: 0 auto;
+  margin: 5rem auto;
   text-align: center;
   background-color: var(--blue);
-  margin-top: 10rem;
   font-size: 1rem;
   font-weight: bold;
   padding: 0.5rem 1rem;

@@ -53,6 +53,14 @@
     align-items: center;
     margin-bottom: 2rem;
     gap: 1rem;
+    display: none;
+  }
+
+  /* -- ESTILOS PARA MOSTRAR SOLO 3 ELEMENTOS AL INICIAR */
+  .main-col-courses-card:nth-child(1),
+  .main-col-courses-card:nth-child(2),
+  .main-col-courses-card:nth-child(3){
+    display: grid;
   }
 
   .main-col-course-detail{

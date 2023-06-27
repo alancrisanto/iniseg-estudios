@@ -131,4 +131,25 @@ bgBlues.forEach((blue, index) => {
 });
 
 
+// BOTÓN CARGAR VER MÁS IMÁGENES
 
+let loadMoreBtn = document.querySelector('.btn-ver-mas');
+let currentItem = 3;
+
+loadMoreBtn.onclick = () =>{
+  console.log("ok")
+  let boxes = [...document.querySelectorAll('.main-col-courses-card')];
+  console.log(boxes)
+  for (var i = currentItem; i < currentItem + 3; i++){
+    if (window.innerWidth >= 1024) {
+      boxes[i].style.display = 'grid';
+    } else {
+      boxes[i].style.display = 'flex';
+    }
+  }
+  currentItem += 3;
+
+  if(currentItem >= boxes.length){
+    loadMoreBtn.style.display = 'none';
+  }
+}
