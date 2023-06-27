@@ -140,7 +140,7 @@ loadMoreBtn.onclick = () =>{
   console.log("ok")
   let boxes = [...document.querySelectorAll('.main-col-courses-card')];
   console.log(boxes)
-  for (var i = currentItem; i < currentItem + 3; i++){
+  for (let i = currentItem; i < currentItem + 3; i++){
     if (window.innerWidth >= 1024) {
       boxes[i].style.display = 'grid';
     } else {
