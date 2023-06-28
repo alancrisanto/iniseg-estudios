@@ -329,8 +329,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin-top: 1.5rem; */
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   border-bottom: 2px solid var(--dark-grey);
   padding-bottom: 2rem;
   display: none;
