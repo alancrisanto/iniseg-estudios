@@ -137,7 +137,6 @@ let loadMoreBtn = document.querySelector('.btn-ver-mas');
 let currentItem = 3;
 
 loadMoreBtn.onclick = () =>{
-  console.log("ok")
   let boxes = [...document.querySelectorAll('.main-col-courses-card')];
   console.log(boxes)
   for (let i = currentItem; i < currentItem + 3; i++){
@@ -148,6 +147,9 @@ loadMoreBtn.onclick = () =>{
     }
   }
   currentItem += 3;
+
+  console.log(currentItem)
+  console.log(boxes.length) 
 
   if(currentItem >= boxes.length){
     loadMoreBtn.style.display = 'none';
