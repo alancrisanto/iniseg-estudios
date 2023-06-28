@@ -48,11 +48,11 @@
   .main-col-courses-card{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-height: 250px;
-    margin-top: 0.75rem;
-    align-items: center;
-    margin-bottom: 2rem;
     gap: 1rem;
+    max-height: 250px;
+    margin-top: 0;
+    align-items: center;
+    padding: 1rem 0;
     display: none;
   }
 
@@ -67,7 +67,12 @@
     display: flex;
     flex-direction: row;
     min-width: 0;
-    gap: 0.5rem;
+    gap: 1rem;
+  }
+
+  /* -- CARD DETAIL MOBILE */
+  .course-detail-mob{
+    display: none;
   }
 
   /* --DETALLE CARDS PRECIO */
@@ -80,11 +85,17 @@
     /* padding: 0 1rem; */
   }
 
-  .course-detail-mobile{
+  .course-detail-pricing p {
     display: none;
   }
 
   .course-detail-img img {
+    display: block;
+    max-width: 100px;
+    margin-bottom: 0;
+  }
+
+  .course-detail-price{
     display: block;
   }
 
@@ -109,6 +120,7 @@
     flex-direction: row;
     margin: 0;
     gap: 1.5rem;
+    display: flex;
   }
 
   /* CARD ICON TEXT SPAN */
@@ -119,6 +131,8 @@
   /* BOTONES PRECIO */
   .course-detail-info-btns{
     margin-top: 1rem;
+    gap: 0;
+    flex-direction: column;
   }
 
   .course-btn {

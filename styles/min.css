@@ -329,8 +329,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
+  border-bottom: 2px solid var(--dark-grey);
+  padding-bottom: 2rem;
   display: none;
+}
+
+.main-col-courses-card:hover{
+  background-color: var(--grey);
 }
 
 /* -- ESTILOS PARA MOSTRAR SOLO 3 ELEMENTOS AL INICIAR */
@@ -344,20 +350,18 @@
 
 .course-detail-pricing {
   display: flex;
-  flex-direction: column; /*-- Vista Móvil*/
+  flex-direction: row; /*-- Vista Móvil*/
   justify-content: space-around;
   align-items: center;
   margin-top: 1rem;
   gap: 1rem;
 }
 
-.course-detail-mobile{
-  font-size: clamp(1.2rem, 3vw, 2rem);
-  text-align: center;
-  color: var(--dark-blue);
-  font-weight: 700;
-  margin-bottom: -1rem;
-}
+  /* -- CONTENEDOR CARD PRICE */
+  .main-col-course-detail{
+    min-width: 100%;
+  }
+
 
 /* --- CARD ECAMPUS IMG */
 
@@ -371,6 +375,10 @@
 
 .main-col-course-image > * {
   grid-area: 1 / 1;
+}
+
+.main-col-course-image img {
+  width: 100%;
 }
 
 /* FigCaption */
@@ -413,17 +421,49 @@
 }
 
 .course-detail-img img {
-  max-width: 100px;
+  /* max-width: 100px; */
+  max-width: 80px;
   height: auto;
-  display: none;
+  margin-bottom: 1rem;
 }
 
+/* CARD DETAIL MOBILE */
+.course-detail-mob{
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.course-detail-mob-info {
+  padding: 0 0.35rem;
+  text-align: center;
+}
+
+.course-detail-mob-info:nth-child(1), 
+.course-detail-mob-info:nth-child(2), 
+.course-detail-mob-info:nth-child(3){ 
+  border-right: 1px solid var(--dark-grey);
+}
+
+.course-detail-mob-info p{
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+}
+
+.course-detail-mob-info:nth-child(4) p:nth-child(1){
+  text-decoration: line-through;
+}
+
+.course-detail-mob-info:nth-child(4) p:nth-child(2){
+  color: var(--red);
+  font-weight: 500;
+}
 
 
 /* --- CARD PRICE */
 .course-detail-price {
   color: var(--main-yellow);
   text-align: center;
+  display: none;
 }
 
 .price-before h6 {
@@ -448,12 +488,13 @@
 /* --- CARD ICONS */
 
 .course-detail-info-icons{
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   margin: 1rem 0;
   gap: 1rem;
+  display: none;
 }
 
 .course-icon-1 {
@@ -472,7 +513,7 @@
 
 .course-icon-1 img {
   max-width: 36px;
-  display: none;
+  /* display: none; */
 }
 
 .course-icon-1 h3 {
@@ -485,13 +526,15 @@
 
 .course-detail-info-btns{
   display: flex;
-  flex-direction: column;
   align-items: center;
+  gap: 1rem;
+  padding: 0 0.8rem;
   
 }
 .course-btn {
   background-color: var(--blue) ;
-  padding: 1rem;
+  /* padding: 1rem; */
+  padding: 0.5rem;
   margin: 1rem 0;
   width: 90%;
   text-align: center;
@@ -637,10 +680,6 @@
     left: 5rem;
   }
   
-  /* -- CONTENEDOR CARD PRICE */
-  .main-col-course-detail{
-    min-width: 100%;
-  }
 }
 
 @media screen and (min-width: 425px ) {

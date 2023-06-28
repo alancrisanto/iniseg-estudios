@@ -138,7 +138,6 @@ let currentItem = 3;
 
 loadMoreBtn.onclick = () =>{
   let boxes = [...document.querySelectorAll('.main-col-courses-card')];
-  console.log(boxes)
   for (let i = currentItem; i < currentItem + 3; i++){
     if (window.innerWidth >= 1024) {
       boxes[i].style.display = 'grid';
@@ -147,9 +146,6 @@ loadMoreBtn.onclick = () =>{
     }
   }
   currentItem += 3;
-
-  console.log(currentItem)
-  console.log(boxes.length) 
 
   if(currentItem >= boxes.length){
     loadMoreBtn.style.display = 'none';
