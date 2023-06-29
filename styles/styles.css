@@ -12,7 +12,8 @@
 	--red: #DE1D27;
 	--blue: #1E5274;
 	--grey: #eee;
-	--dark-grey:#d2d2d2; 
+	--dark-grey:#b1b1b1; 
+	/* #ebebeb */
 }
 
 * {
@@ -50,4 +51,8 @@ form {
 
 label {
 	margin: 0.2rem 0;
+}
+
+figure {
+	margin: 0 !important;
 }

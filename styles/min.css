@@ -331,7 +331,7 @@
   align-items: center;
   margin-top: 2.5rem;
   border-bottom: 2px solid var(--dark-grey);
-  padding-bottom: 2rem;
+  margin-bottom: 2rem;
   display: none;
 }
 
@@ -432,6 +432,7 @@
   display: flex;
   justify-content: center;
   gap: 0.5rem;
+  margin-top: 1.5rem;
 }
 
 .course-detail-mob-info {
@@ -508,7 +509,7 @@
 
 .course-icon-1 p {
   font-weight: 700;
-  font-size: clamp(0.85rem, 2vw, 0.85rem);
+  font-size: clamp(0.75rem, 1vw, 0.85rem);
 }
 
 .course-icon-1 img {
