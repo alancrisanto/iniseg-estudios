@@ -27,7 +27,7 @@ function cargarTarjetas() {
     .map((card) => {
       return `<article class="main-col-courses-card">
                 <figure class="main-col-course-image">
-                  <img src=${card.img} alt=${card.description}>
+                  <img src="${card.img}" alt="imagen de ${card.description}">
                   <figcaption class="course-img-text">
                     <p>${card.title}</p>
                     <p>${card.description}</p>
@@ -55,7 +55,7 @@ function cargarTarjetas() {
                   <div class="course-detail-pricing">
                     <p>En colaboracion con:</p>
                     <div class="course-detail-img">
-                      <img src=${card.imgInstitution} alt=${card.institution}>
+                      <img src="${card.imgInstitution}" alt="Logo de ${card.institution}">
                     </div>
                     <div class="course-detail-price">
                       <div class="price-before">
@@ -71,15 +71,15 @@ function cargarTarjetas() {
                   <div class="course-detail-info">
                     <div class="course-detail-info-icons">
                       <div class="course-icon-1">
-                        <img src=${card.icon1} alt="Iniseg ícono duracion">
+                        <img src="${card.icon1}" alt="Iniseg ícono duracion">
                         <p><span class="icon-text-mobile">Duración: </span>${card.duracion}</p>
                       </div>
                       <div class="course-icon-1">
-                        <img src=${card.icon2} alt="Iniseg ícono créditos">
+                        <img src="${card.icon2}" alt="Iniseg ícono créditos">
                         <p><span class="icon-text-mobile">Créditos: </span>${card.creditos}</p>
                       </div>
                       <div class="course-icon-1">
-                        <img src=${card.icon3} alt="Iniseg ícono Online">
+                        <img src="${card.icon3}" alt="Iniseg ícono Online">
                         <p><span class="icon-text-mobile">Modalidad: </span>${card.modalidad}</p>
                       </div>
                     </div>
