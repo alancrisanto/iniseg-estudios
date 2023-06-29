@@ -118,6 +118,12 @@
     font-size: 1.3rem;
   }
   
+  
+  /* --CARD ICON / BOTONES CONTAINER */
+  .course-detail-info{
+    min-width: 200px;
+  }
+  
   /* ÍCONOS PRECIOS */
   .course-detail-info-icons {
     flex-direction: row;
@@ -209,5 +215,10 @@
 
     .main-col-course-image{
       flex-basis: 450px;
+    }
+
+    /* --CARD ICON / BOTONES CONTAINER */
+    .course-detail-info{
+      min-width: 220px;
     }
 }
