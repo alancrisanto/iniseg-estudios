@@ -361,6 +361,7 @@
   position: relative;
   display: grid;
   max-width: 450px;
+  overflow: hidden;
   /* width: min(90vw, 450px); */
 }
 
@@ -370,7 +371,16 @@
 
 .main-col-course-image img {
   width: 100%;
+  transition: scale 400ms;
 }
+
+.main-col-course-image img:hover {
+  scale: 110%;
+}
+
+
+
+
 
 /* FigCaption */
 .course-img-text{
