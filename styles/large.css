@@ -36,6 +36,10 @@
   /* CARDS */
 
   /* CARD IMG */
+  .main-col-course-image{
+    flex-basis: 370px;
+  }
+
   .main-col-course-image img {
     width: 100%;
     height: auto;
@@ -46,13 +50,14 @@
   }
 
   .main-col-courses-card{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    /* grid-template-columns: 1fr 1fr; */
     gap: 1rem;
-    max-height: 250px;
+    /* max-height: 250px; */
     margin-top: 0;
     align-items: center;
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
     display: none;
   }
 
@@ -60,7 +65,7 @@
   .main-col-courses-card:nth-child(1),
   .main-col-courses-card:nth-child(2),
   .main-col-courses-card:nth-child(3){
-    display: grid;
+    display: flex;
   }
 
   .main-col-course-detail{
@@ -68,6 +73,9 @@
     flex-direction: row;
     min-width: 0;
     gap: 1rem;
+    align-items: stretch;
+    margin-top: 1rem;
+    margin-right: 0.65rem;
   }
 
   /* -- CARD DETAIL MOBILE */
@@ -202,5 +210,9 @@
     /* -- IMG CARDS */
     .main-col-course-detail{
       gap: 1.5rem;
+    }
+
+    .main-col-course-image{
+      flex-basis: 450px;
     }
 }
