@@ -332,21 +332,12 @@
   margin-top: 2.5rem;
   border-bottom: 2px solid var(--dark-grey);
   margin-bottom: 2rem;
-  display: none;
+  /* display: none; */
 }
 
 .main-col-courses-card:hover{
   background-color: var(--grey);
 }
-
-/* -- ESTILOS PARA MOSTRAR SOLO 3 ELEMENTOS AL INICIAR */
-.main-col-courses-card:nth-child(1),
-.main-col-courses-card:nth-child(2),
-.main-col-courses-card:nth-child(3){
-  display: flex;
-}
-
-
 
 .course-detail-pricing {
   display: flex;

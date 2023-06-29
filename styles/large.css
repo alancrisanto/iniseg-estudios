@@ -58,15 +58,10 @@
     margin-top: 0;
     align-items: center;
     /* padding: 1rem 0; */
-    display: none;
+    /* display: none; */
   }
 
-  /* -- ESTILOS PARA MOSTRAR SOLO 3 ELEMENTOS AL INICIAR */
-  .main-col-courses-card:nth-child(1),
-  .main-col-courses-card:nth-child(2),
-  .main-col-courses-card:nth-child(3){
-    display: flex;
-  }
+
 
   .main-col-course-detail{
     display: flex;

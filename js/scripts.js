@@ -113,22 +113,3 @@ function actualizarTitulo() {
   titulo.textContent = nuevoTitulo;
 }
 
-// BOTÓN CARGAR VER MÁS IMÁGENES
-
-// let loadMoreBtn = document.querySelector('.btn-ver-mas');
-// let currentItem = 3;
-
-// loadMoreBtn.onclick = () =>{
-//   let boxes = [...document.querySelectorAll('.main-col-courses-card')];
-//   for (let i = currentItem; i < currentItem + 3; i++){
-//     if (window.innerWidth >= 1024) {
-      
-//       boxes[i].style.display = 'flex';
-//     }
-//   }
-//   currentItem += 3;
-
-//   if(currentItem >= boxes.length){
-//     loadMoreBtn.style.display = 'none';
-//   }
-// }
