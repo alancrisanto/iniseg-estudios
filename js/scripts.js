@@ -113,41 +113,22 @@ function actualizarTitulo() {
   titulo.textContent = nuevoTitulo;
 }
 
-// ALTERNAR COLORES EN CARDS
-
-const bgBlues = document.querySelectorAll('.course-img-text');
-
-bgBlues.forEach((blue, index) => {
-  if (index % 3 === 0) {
-    blue.style.backgroundColor = 'rgba(34,44,63,0.7)'; // Color blue
-    blue.style.setProperty('--pseudo-element-color', 'var(--red)');
-  } else if (index % 3 === 1) {
-    blue.style.backgroundColor = 'rgba(251,192,9,0.5)'; // Color Yellow
-    blue.style.setProperty('--pseudo-element-color', 'var(--blue-card)');
-  } else {
-    blue.style.backgroundColor = 'rgba(222,29,39,0.7)'; // Color Red
-    blue.style.setProperty('--pseudo-element-color', 'var(--main-yellow)');
-  }
-});
-
-
 // BOTÓN CARGAR VER MÁS IMÁGENES
 
-let loadMoreBtn = document.querySelector('.btn-ver-mas');
-let currentItem = 3;
+// let loadMoreBtn = document.querySelector('.btn-ver-mas');
+// let currentItem = 3;
 
-loadMoreBtn.onclick = () =>{
-  let boxes = [...document.querySelectorAll('.main-col-courses-card')];
-  for (let i = currentItem; i < currentItem + 3; i++){
-    if (window.innerWidth >= 1024) {
-      boxes[i].style.display = 'grid';
-    } else {
-      boxes[i].style.display = 'flex';
-    }
-  }
-  currentItem += 3;
+// loadMoreBtn.onclick = () =>{
+//   let boxes = [...document.querySelectorAll('.main-col-courses-card')];
+//   for (let i = currentItem; i < currentItem + 3; i++){
+//     if (window.innerWidth >= 1024) {
+      
+//       boxes[i].style.display = 'flex';
+//     }
+//   }
+//   currentItem += 3;
 
-  if(currentItem >= boxes.length){
-    loadMoreBtn.style.display = 'none';
-  }
-}
+//   if(currentItem >= boxes.length){
+//     loadMoreBtn.style.display = 'none';
+//   }
+// }

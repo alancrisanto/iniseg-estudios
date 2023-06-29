@@ -1,8 +1,8 @@
 import cardsData from "./cardsData.js";
 
 // Obtener el elemento contenedor de las tarjetas
-const cardContainer = document.querySelector('.cards');
-const btnVerMas = document.querySelector('.btn-ver-mas');
+const cardContainer = document.querySelector(".cards");
+const btnVerMas = document.querySelector(".btn-ver-mas");
 
 // Definir la cantidad de tarjetas a cargar inicialmente y el incremento por clic
 const cardsPorCarga = 3;
@@ -17,14 +17,14 @@ function cargarTarjetas() {
   // Verificar si hay más tarjetas por cargar
   if (indiceInicio >= cardsData.length) {
     // Si no hay más tarjetas, ocultar el botón "Ver Más"
-    btnVerMas.style.display = 'none';
+    btnVerMas.style.display = "none";
     return; // Salir de la función
   }
 
   // Generar el HTML para las tarjetas adicionales
   const tarjetasHTML = cardsData
     .slice(indiceInicio, indiceFin)
-    .map(card => {
+    .map((card) => {
       return `<article class="main-col-courses-card">
                 <figure class="main-col-course-image">
                   <img src=${card.img} alt=${card.description}>
@@ -95,7 +95,7 @@ function cargarTarjetas() {
                 </div>
               </article>`;
     })
-    .join(''); // Convertir el array en una cadena de texto
+    .join(""); // Convertir el array en una cadena de texto
 
   // Agregar las tarjetas al contenedor
   cardContainer.innerHTML += tarjetasHTML;
@@ -109,26 +109,23 @@ function cargarTarjetas() {
 cargarTarjetas();
 
 // Agregar un evento click al botón "Ver Más"
-btnVerMas.addEventListener('click', cargarTarjetas);
-
+btnVerMas.addEventListener("click", cargarTarjetas);
 
 // ALTERNAR COLORES EN CARDS
 
-function coloresCards (){
+function coloresCards() {
+  const bgBlues = document.querySelectorAll(".course-img-text");
 
-const bgBlues = document.querySelectorAll('.course-img-text');
-
-bgBlues.forEach((blue, index) => {
-  if (index % 3 === 0) {
-    blue.style.backgroundColor = 'rgba(34,44,63,0.7)'; // Color blue
-    blue.style.setProperty('--pseudo-element-color', 'var(--red');
-  } else if (index % 3 === 1) {
-    blue.style.backgroundColor = 'rgba(251,192,9,0.5)'; // Color Yellow
-    blue.style.setProperty('--pseudo-element-color', 'var(--blue-card');
-  } else {
-    blue.style.backgroundColor = 'rgba(222,29,39,0.7)'; // Color Red
-    blue.style.setProperty('--pseudo-element-color', 'var(--main-yellow');
-  }
-});
-
+  bgBlues.forEach((blue, index) => {
+    if (index % 3 === 0) {
+      blue.style.backgroundColor = "rgba(34,44,63,0.7)"; // Color blue
+      blue.style.setProperty("--pseudo-element-color", "var(--red)"); // Asignar color a pseudo elemento after
+    } else if (index % 3 === 1) {
+      blue.style.backgroundColor = "rgba(251,192,9,0.5)"; // Color Yellow
+      blue.style.setProperty("--pseudo-element-color", "var(--blue-card)"); // Asignar color a pseudo elemento after
+    } else {
+      blue.style.backgroundColor = "rgba(222,29,39,0.7)"; // Color Red
+      blue.style.setProperty("--pseudo-element-color", "var(--main-yellow)"); // Asignar color a pseudo elemento after
+    }
+  });
 }
