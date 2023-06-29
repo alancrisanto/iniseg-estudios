@@ -52,11 +52,12 @@
   .main-col-courses-card{
     display: flex;
     flex-direction: row;
-    /* grid-template-columns: 1fr 1fr; */
     gap: 1rem;
-    /* max-height: 250px; */
     margin-top: 0;
     align-items: center;
+    max-width: none;
+    /* grid-template-columns: 1fr 1fr; */
+    /* max-height: 250px; */
     /* padding: 1rem 0; */
     /* display: none; */
   }

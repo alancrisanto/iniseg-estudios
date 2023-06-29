@@ -96,6 +96,11 @@
     font-size: 1.5rem;
   }
 
+  .main-col-courses-card{
+    margin: 2.5rem auto 2rem auto;
+    max-width: 450px;
+  }
+
 }
 
 @media only screen and (min-width: 820px) {
