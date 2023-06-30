@@ -365,6 +365,21 @@
   /* width: min(90vw, 450px); */
 }
 
+.main-col-course-image::after{
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-color: var(--brillo);
+  left: -200px;
+  transform: skew(-30deg);
+  transition: all 0.6s;
+}
+
+.main-col-courses-card:hover .main-col-course-image::after{
+  left: 600px;
+}
+
 .main-col-course-image > * {
   grid-area: 1 / 1;
 }
