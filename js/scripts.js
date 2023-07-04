@@ -82,7 +82,7 @@ setInterval(changeLogo, 3500);
 
 // FUNCIÓN PERMITIR QUE UN SOLO CHECKBOX SEA ACTIVADO EN TIPO DE TITULACIÓN
 function seleccionarCheckbox(event) {
-  var checkboxes = document.querySelectorAll('.checkbox-titulación');
+  let checkboxes = document.querySelectorAll('.checkbox-titulación');
 
   checkboxes.forEach(function(checkbox) {
     if (checkbox !== event.target) {
@@ -113,3 +113,16 @@ function actualizarTitulo() {
   titulo.textContent = nuevoTitulo;
 }
 
+// LIMPIAR FILTROS AL DAR CLICK EN BOTON
+const btnFiltro = document.querySelector(".btn-limpiar-filtro");
+
+function clearFilter(){
+  let checkboxes = document.querySelectorAll('.checkboxes');
+  checkboxes.forEach((checkbox)=> {
+    checkbox.checked = false;
+    actualizarTitulo();
+  })
+
+}
+
+btnFiltro.addEventListener("click", clearFilter)

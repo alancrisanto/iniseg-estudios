@@ -268,7 +268,57 @@
 .main-filter-clr-btn p {
   font-size: 1.3rem;
   margin: 0;
-  padding-bottom: 0.6rem;
+  margin-top: 0.3rem !important;
+  /* padding: 0.3rem; */
+  position: relative;
+  transition-duration: 400ms;
+}
+
+.main-filter-clr-btn p:hover {
+  cursor: pointer;
+  transition-delay: .5s;
+  padding: 0 0.3rem;
+  background-color:#ffffff radial-gradient(circle, transparent 1%, #ffffff 1%) center/15000%;
+}
+
+.main-filter-clr-btn p:active {
+  background: var(--main-yellow);
+  color: white;
+  background-size: 100%;
+  transition: background-color 0s;
+}
+
+.main-filter-clr-btn p::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--main-yellow);
+  transition: .5s ease;
+}
+
+.main-filter-clr-btn p:hover::before {
+  width: 100%;
+}
+
+.main-filter-clr-btn p::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  /* background-color: var(--main-yellow); */
+  border: 1px solid var(--main-yellow);
+  transition: .4s ease;
+  z-index: -1;
+}
+
+.main-filter-clr-btn p:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
 }
 
 /* FILTER BANNER IMG */
