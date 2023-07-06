@@ -376,7 +376,7 @@
 
 /* --- LAZY LOADING PROPERTIES */
 .blur-load {
-  background-image: url("/assets/images/cards/blur.jpg");
+  background-image: url("../assets/images/cards/blur.jpg");
   background-repeat: no-repeat;
   background-size:cover;
 }
