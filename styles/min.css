@@ -374,6 +374,49 @@
 
 /* --- MAIN COURSES CARD */
 
+/* --- LAZY LOADING PROPERTIES */
+.blur-load {
+  background-image: url(/assets/images/cards/blur.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.blur-load img {
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+.blur-load::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  animation: pulse 2.5s infinite;
+  background-color: white;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.loaded::before{
+  animation: none;
+  content: none;
+}
+
+.loaded img {
+  opacity: 1;
+}
+/* --- FIN LAZY LOADING */
+
 .main-col-courses-card{
   display: flex;
   flex-direction: column;
@@ -412,7 +455,7 @@
   display: grid;
   max-width: 450px;
   overflow: hidden;
-  /* width: min(90vw, 450px); */
+  min-height: 145px;
 }
 
 .main-col-course-image::after{
@@ -436,11 +479,11 @@
 
 .main-col-course-image img {
   width: 100%;
-  transition: scale 400ms;
+  transition: transform 400ms;
 }
 
 .main-col-courses-card:hover .main-col-course-image img{
-  scale: 110%;
+  transform: scale(1.1);
 }
 
 
@@ -764,5 +807,10 @@
   .course-img-text{
     padding-left: 1.5rem;
     padding-right: 1.2rem;
+  }
+
+  /* -- FIG CAPTION */
+  .main-col-course-image {
+    min-height: 170px;
   }
 }
