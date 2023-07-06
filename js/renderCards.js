@@ -27,7 +27,9 @@ function cargarTarjetas() {
     .map((card) => {
       return `<article class="main-col-courses-card">
                 <figure class="main-col-course-image">
-                  <img src="${card.img}" alt="imagen de ${card.description}">
+                  <div class="blur-load">
+                    <img src="${card.img}" alt="imagen de ${card.description}" loading="lazy" >
+                  </div>
                   <figcaption class="course-img-text">
                     <p>${card.title}</p>
                     <p>${card.description}</p>
@@ -103,6 +105,7 @@ function cargarTarjetas() {
   // Actualizar la cantidad de tarjetas cargadas
   cardsCargadas += cardsPorCarga;
   coloresCards();
+  lazyLoad();
 }
 
 // Cargar las primeras tarjetas al iniciar la página
@@ -129,3 +132,28 @@ function coloresCards() {
     }
   });
 }
+
+// LAZY LOADING BLUR IMAGES
+// LAZY LOADING BLUR IMAGES
+function lazyLoad() {
+  const blurDivs = document.querySelectorAll(".blur-load");
+  
+
+  blurDivs.forEach((div) => {
+    const img = div.querySelector("img");
+    console.log(img)
+
+    function loaded() {
+      div.classList.add("loaded");
+    }
+
+    if (img.complete) {
+      loaded();
+    } else {
+      img.addEventListener("load", loaded);
+    }
+  });
+}
+
+lazyLoad();
+
