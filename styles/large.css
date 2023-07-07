@@ -185,15 +185,16 @@
   .main-cont-mobile-text{
     position: absolute;
     left: 1rem;
-    bottom: 0;
+    bottom: 1rem;
   }
 
   .main-cont-mobile-text p:nth-child(1){
-    font-size: 2.5rem;
+    font-size: 2rem;
+    line-height: 2rem;
   }
 
   .main-cont-mobile-text p:nth-child(2){
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   /* IMAGEN GRUPO INVESTIGACIÓN DESKTOP */
@@ -209,17 +210,31 @@
 
 @media screen and (min-width:1280px) {
 
-    /* -- IMG CARDS */
-    .main-col-course-detail{
-      gap: 1.5rem;
-    }
+  /* -- BANNER BECA */
+  .main-cont-mobile-text{
+    bottom: 1rem;
+  }
 
-    .main-col-course-image{
-      flex-basis: 450px;
-    }
+    .main-cont-mobile-text p:nth-child(1){
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
 
-    /* --CARD ICON / BOTONES CONTAINER */
-    .course-detail-info{
-      min-width: 220px;
-    }
+  .main-cont-mobile-text p:nth-child(2){
+    font-size: 1.5rem;
+  }
+
+  /* -- IMG CARDS */
+  .main-col-course-detail{
+    gap: 1.5rem;
+  }
+
+  .main-col-course-image{
+    flex-basis: 450px;
+  }
+
+  /* --CARD ICON / BOTONES CONTAINER */
+  .course-detail-info{
+    min-width: 220px;
+  }
 }
