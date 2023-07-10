@@ -61,24 +61,49 @@ toggleNavbar.addEventListener('click', function () {
 	}
 })
 
-// FUNCIÓN CAMBIAR LA IMAGEN CADA 3.5 SEGUNDOS
+// ### FUNCION PARA CAMBIAR LA IMAGEN DEL LOGO 
+
 const logo = document.querySelector('.logo');
+const navbarMenu = document.querySelector('nav');
+const navbarStyle = window.getComputedStyle(navbarMenu);
+
+// SELECCIONAR IMAGEN AL ABRIR LA PÁGINA
+
+if (navbarStyle.backgroundColor === 'rgba(0, 0, 0, 0)'){
+  logo.src = 'assets/images/menu/nombre-blanco.png';
+} else {
+  logo.src = 'assets/images/menu/nombre-azul.png';
+}
+
+// CAMBIAR LA IMAGEN UNA VEZ CARGADA LA PÁGINA DE ACUERDO AL BACKGROUND-COLOR
 let images = [
-  'assets/images/menu/logo2-azul.png',
-  'assets/images/menu/nombre-azul.png',
+  'assets/images/menu/logo-blanco.png',
+  'assets/images/menu/nombre-blanco.png',
 ];
+
+let imagesBlue = [
+  'assets/images/menu/logo-azul.png',
+  'assets/images/menu/nombre-azul.png',
+]
 let currentImageIndex = 0;
 
+// FUNCIÓN CAMBIAR LA IMAGEN CADA 3.5 SEGUNDOS
 function changeLogo() {
   logo.classList.add('hidden');
   setTimeout(function() {
-    logo.src = images[currentImageIndex];
+    if (navbarStyle.backgroundColor === 'rgba(0, 0, 0, 0)'){
+      logo.src = images[currentImageIndex];
+    } else {
+      logo.src = imagesBlue[currentImageIndex];
+    }
     logo.classList.remove('hidden');
     currentImageIndex = (currentImageIndex + 1) % images.length;
   }, 1000);
 }
 
-setInterval(changeLogo, 3500);
+setInterval(changeLogo, 3000);
+
+// ### FIN FUNCION PARA CAMBIAR LA IMAGEN DEL LOGO 
 
 // FUNCIÓN PERMITIR QUE UN SOLO CHECKBOX SEA ACTIVADO EN TIPO DE TITULACIÓN
 function seleccionarCheckbox(event) {
