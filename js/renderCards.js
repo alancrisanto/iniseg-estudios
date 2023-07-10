@@ -141,7 +141,6 @@ function lazyLoad() {
 
   blurDivs.forEach((div) => {
     const img = div.querySelector("img");
-    console.log(img)
 
     function loaded() {
       div.classList.add("loaded");
