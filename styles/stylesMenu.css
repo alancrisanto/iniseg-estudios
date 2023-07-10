@@ -6,7 +6,7 @@
 }
 
 nav {
-	background: transparent;
+	background-color: transparent;
 	height: 100px;
 	position: relative;
 	padding-top: 0 !important;
@@ -298,7 +298,7 @@ header .sticky .nav-menu > li > a {
 
 @media screen and (max-width: 993px) {
 	nav {
-		background: white;
+		background-color: white;
 		padding-top: 0 !important;
 	}
 	nav .nav-menu-sticky {
