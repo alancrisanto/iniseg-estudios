@@ -1,17 +1,16 @@
-
 /*Page Loader*/
-#contenedor_carga{
+#contenedor_carga {
   background-color: #ffffff;
   height: 100%;
   width: 100%;
   position: fixed;
   -webkit-transition: all 1s ease;
-  -o-transition:  all 1s ease;
+  -o-transition: all 1s ease;
   transition: all 1s ease;
   z-index: 10000;
 }
 
-#cargaLogo img{
+#cargaLogo img {
   height: 100px;
   width: 100px;
   border-radius: 100%;
@@ -23,9 +22,9 @@
   margin: auto;
 }
 
-#carga{
+#carga {
   border: 5px solid hsla(0, 0%, 100%, 0);
-  border-top-color: #F4A320;
+  border-top-color: #f4a320;
   border-radius: 50%;
   width: 115px;
   height: 115px;
@@ -40,16 +39,14 @@
   animation: girar 1s linear infinite;
 }
 
-@keyframes girar{
+@keyframes girar {
   from {
-      transform: rotate(0deg);
-  }to{
-      transform: rotate(360deg);
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
-
-
-
 
 /* ---- HEADER INFORMATION ----- */
 .logo {
@@ -59,14 +56,14 @@
 
 .header-info-container {
   background-color: var(--main-blue);
-	padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
-.header-info-icons-mobile{
-	display: flex;
-	gap: 1rem;
-	justify-content: center;
-	/* font-size: 1.2rem; */
+.header-info-icons-mobile {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  /* font-size: 1.2rem; */
   margin-bottom: 0.5rem;
 }
 
@@ -74,11 +71,12 @@
   color: white;
 }
 
-.header-info-icons-desktop, .header-info-phone{
-	display: none;
+.header-info-icons-desktop,
+.header-info-phone {
+  display: none;
 }
 
-.header-info{
+.header-info {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -95,12 +93,11 @@
   opacity: 0.4;
 }
 
-
 /* -- BOTÓN SOLICTAR INFORMACIÓN */
 .header-info-btn-link {
-	background-color: white;
-	padding: 0.5rem 0.6rem;
-	border-radius: 5px;
+  background-color: white;
+  padding: 0.5rem 0.6rem;
+  border-radius: 5px;
 }
 
 .header-info-btn-link a {
@@ -110,17 +107,15 @@
 }
 
 .header-info-btn-link:hover {
-	background-color: var(--main-blue);
+  background-color: var(--main-blue);
   border: 1px solid white;
 }
 .header-info-btn-link:hover a {
   color: white;
 }
 
-
-
 /* --- BOTÓN AULA VIRTUAL */
-.header-info-aula-btn{
+.header-info-aula-btn {
   background-color: var(--dark-yellow);
   padding: 0.3rem 0.5rem;
   border-radius: 16px;
@@ -130,7 +125,7 @@
   background-color: white;
 }
 
-.header-info-aula-btn:hover a{
+.header-info-aula-btn:hover a {
   color: var(--dark-blue);
 }
 
@@ -152,16 +147,16 @@
 }
 
 /* --- HEADER VIDEO */
-.header-video{
+.header-video {
   text-align: center;
 }
-.header-video img{
+.header-video img {
   width: 100%;
 }
 
 /* --- MAIN AREA */
 
-.main-container{
+.main-container {
   margin-top: 2rem;
   padding: 1rem;
 }
@@ -172,7 +167,7 @@
   color: var(--dark-blue);
 }
 
-.main-container-head h1{
+.main-container-head h1 {
   font-weight: 700;
 }
 
@@ -187,7 +182,7 @@
 } */
 
 /* --IMAGEN BANNER TEXT MOBILE */
-.main-cont-mobile-text{
+.main-cont-mobile-text {
   position: absolute;
   bottom: 1rem;
   left: 3rem;
@@ -214,15 +209,13 @@
   margin: 0;
 }
 
-
 /* -- HEADER VIDEO */
-.header-video{
+.header-video {
   text-align: center;
 }
-.header-video img{
+.header-video img {
   width: 100%;
 }
-
 
 /* --- FILTRO TITLE */
 
@@ -237,7 +230,6 @@
   font-weight: 900;
   font-size: clamp(2rem, 2vw, 2.5rem);
 }
-
 
 /* ---- FILTRO CLEAR BTN */
 
@@ -255,7 +247,7 @@
   margin: 1.5rem 0;
 }
 
-.main-filter-clear i{
+.main-filter-clear i {
   font-size: 4rem;
 }
 
@@ -276,9 +268,9 @@
 
 .main-filter-clr-btn p:hover {
   cursor: pointer;
-  transition-delay: .5s;
+  transition-delay: 0.5s;
   padding: 0 0.3rem;
-  background-color:#ffffff radial-gradient(circle, transparent 1%, #ffffff 1%) center/15000%;
+  background-color: #ffffff radial-gradient(circle, transparent 1%, #ffffff 1%) center/15000%;
 }
 
 .main-filter-clr-btn p:active {
@@ -289,14 +281,14 @@
 }
 
 .main-filter-clr-btn p::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   height: 2px;
   width: 0;
   background-color: var(--main-yellow);
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .main-filter-clr-btn p:hover::before {
@@ -304,7 +296,7 @@
 }
 
 .main-filter-clr-btn p::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -312,7 +304,7 @@
   width: 100%;
   /* background-color: var(--main-yellow); */
   border: 1px solid var(--main-yellow);
-  transition: .4s ease;
+  transition: 0.4s ease;
   z-index: -1;
 }
 
@@ -321,13 +313,141 @@
   transition-delay: 0.4s;
 }
 
+/* boton filtro  */
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button.clear-filter {
+  width: 12rem;
+  height: auto;
+}
+
+button.clear-filter .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 2rem;
+  height: 2rem;
+  background: var(--main-yellow);
+  border-radius: 1.625rem;
+}
+
+button.clear-filter .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  left: 0.3rem;
+  bottom: 5px;
+  margin: auto;
+}
+
+button.clear-filter .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: -0.85rem;
+  right: 0;
+  bottom: 0;
+  font-size: 0.90rem;
+  margin: 0.25rem 0 0 0;
+  color: var(--main-yellow);
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+}
+
+button:hover .circle {
+  width: 78%;
+}
+
+button:hover .circle .icon {
+  animation: sweep 1s cubic-bezier(0.805, 0, 1, 1) infinite;
+}
+
+button:hover .button-text {
+  color: #fff;
+}
+
+button:hover .icon #broom {
+  animation: sweep 1s cubic-bezier(0.805, 0, 1, 1) infinite;
+  transform-origin: 50% 30%;
+}
+
+button:hover .icon #brush {
+  animation: stretch 1s linear infinite;
+  transform-origin: center bottom;
+}
+
+button:hover .icon #logs {
+  animation: logs 0.5s cubic-bezier(0.805, 0, 1, 1) forwards;
+  animation-delay: 0.1s;
+}
+
+@keyframes sweep {
+  0% {
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+  }
+  50% {
+    -ms-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+  }
+  100% {
+    -ms-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+  }
+}
+
+@keyframes logs {
+  0% {
+    -ms-transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+  100% {
+    -ms-transform: translate(50px, 0px);
+    -webkit-transform: translate(50px, 0px);
+    transform: translate(50px, 0px);
+  }
+}
+
+@keyframes stretch {
+  0% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(0.8);
+    transform: scaleY(0.8);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+}
+
+
 /* FILTER BANNER IMG */
 .main-container-img-desktop {
   display: none;
 }
 
 /* --- MAIN FILTER COL */
-.main-filter-list{
+.main-filter-list {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -340,11 +460,11 @@
 }
 
 /* --- BOTÓN FILTRAR */
-.filtrar-mobile-btn{
+.filtrar-mobile-btn {
   margin-bottom: 1.5rem;
 }
 
-.filter-title-desktop{
+.filter-title-desktop {
   display: none;
 }
 
@@ -357,8 +477,7 @@
   gap: 1rem;
   border-radius: 0px;
   background: #ffffff;
-  box-shadow:  5px 5px 25px #ededed,
-              -5px -5px 25px #ffffff;
+  box-shadow: 5px 5px 25px #ededed, -5px -5px 25px #ffffff;
 }
 
 .filtrar-mobile-text .bi {
@@ -367,10 +486,9 @@
   transform: rotate(180deg);
 }
 
-.filtrar-mobile-text h2{
+.filtrar-mobile-text h2 {
   font-size: clamp(0.85rem, 2vw, 1.5rem);
 }
-
 
 /* --- MAIN COURSES CARD */
 
@@ -378,7 +496,7 @@
 .blur-load {
   background-image: url("../assets/images/cards/blur.jpg");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
 }
 
 .blur-load img {
@@ -386,7 +504,7 @@
   transition: opacity 250ms ease-in-out;
 }
 
-.blur-load::before{
+.blur-load::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -407,7 +525,7 @@
   }
 }
 
-.loaded::before{
+.loaded::before {
   animation: none;
   content: none;
 }
@@ -417,7 +535,7 @@
 }
 /* --- FIN LAZY LOADING */
 
-.main-col-courses-card{
+.main-col-courses-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -428,7 +546,7 @@
   /* display: none; */
 }
 
-.main-col-courses-card:hover{
+.main-col-courses-card:hover {
   background-color: var(--grey);
 }
 
@@ -441,16 +559,15 @@
   gap: 1rem;
 }
 
-  /* -- CONTENEDOR CARD PRICE */
-  .main-col-course-detail{
-    min-width: 100%;
-  }
-
+/* -- CONTENEDOR CARD PRICE */
+.main-col-course-detail {
+  min-width: 100%;
+}
 
 /* --- CARD ECAMPUS IMG */
 
 /* Figure */
-.main-col-course-image{
+.main-col-course-image {
   position: relative;
   display: grid;
   max-width: 450px;
@@ -458,7 +575,7 @@
   min-height: 145px;
 }
 
-.main-col-course-image::after{
+.main-col-course-image::after {
   content: "";
   position: absolute;
   width: 100px;
@@ -469,7 +586,7 @@
   transition: all 0.6s;
 }
 
-.main-col-courses-card:hover .main-col-course-image::after{
+.main-col-courses-card:hover .main-col-course-image::after {
   left: 600px;
 }
 
@@ -482,13 +599,12 @@
   transition: transform 400ms;
 }
 
-.main-col-courses-card:hover .main-col-course-image img{
+.main-col-courses-card:hover .main-col-course-image img {
   transform: scale(1.1);
 }
 
-
 /* FigCaption */
-.course-img-text{
+.course-img-text {
   --red-triangle-width: 5%;
   position: relative;
   align-self: end;
@@ -500,7 +616,7 @@
   color: white;
 }
 
-.course-img-text::after{
+.course-img-text::after {
   content: "";
   position: absolute;
   display: block;
@@ -522,7 +638,7 @@
   font-size: clamp(0.7rem, 3.2vw, 1rem);
 }
 
-.course-img-text p{
+.course-img-text p {
   text-shadow: 2px 0px 2px black;
 }
 
@@ -534,7 +650,7 @@
 }
 
 /* CARD DETAIL MOBILE */
-.course-detail-mob{
+.course-detail-mob {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
@@ -546,25 +662,24 @@
   text-align: center;
 }
 
-.course-detail-mob-info:nth-child(1), 
-.course-detail-mob-info:nth-child(2), 
-.course-detail-mob-info:nth-child(3){ 
+.course-detail-mob-info:nth-child(1),
+.course-detail-mob-info:nth-child(2),
+.course-detail-mob-info:nth-child(3) {
   border-right: 1px solid var(--dark-grey);
 }
 
-.course-detail-mob-info p{
+.course-detail-mob-info p {
   font-size: clamp(0.85rem, 1.5vw, 1rem);
 }
 
-.course-detail-mob-info:nth-child(4) p:nth-child(1){
+.course-detail-mob-info:nth-child(4) p:nth-child(1) {
   text-decoration: line-through;
 }
 
-.course-detail-mob-info:nth-child(4) p:nth-child(2){
+.course-detail-mob-info:nth-child(4) p:nth-child(2) {
   color: var(--red);
   font-weight: 500;
 }
-
 
 /* --- CARD PRICE */
 .course-detail-price {
@@ -575,26 +690,27 @@
 
 .price-before h6 {
   text-decoration: line-through;
-  text-decoration-color: var(--dark-blue) ;
+  text-decoration-color: var(--dark-blue);
 }
 
-.price-before h6 span, .price-now h5 span{
+.price-before h6 span,
+.price-now h5 span {
   color: var(--dark-blue);
   font-weight: 700;
 }
 
-.price-before h6, .price-now h5{
+.price-before h6,
+.price-now h5 {
   font-weight: 700;
 }
 
-.price-now span{
+.price-now span {
   font-weight: 700;
 }
-
 
 /* --- CARD ICONS */
 
-.course-detail-info-icons{
+.course-detail-info-icons {
   /* display: flex; */
   flex-direction: column;
   justify-content: space-evenly;
@@ -631,15 +747,14 @@
 
 /* ---- CARD BUTTONS */
 
-.course-detail-info-btns{
+.course-detail-info-btns {
   display: flex;
   align-items: center;
   gap: 1rem;
   padding: 0 0.8rem;
-  
 }
 .course-btn {
-  background-color: var(--blue) ;
+  background-color: var(--blue);
   /* padding: 1rem; */
   padding: 0.5rem;
   margin: 1rem 0;
@@ -650,7 +765,7 @@
   overflow: hidden;
 }
 
-.course-btn:nth-child(2){
+.course-btn:nth-child(2) {
   background-color: var(--main-yellow);
 }
 
@@ -660,7 +775,7 @@
   font-size: clamp(0.95rem, 2.5vw, 1.2rem);
 }
 
-.btn-matricula a{
+.btn-matricula a {
   color: var(--dark-blue);
 }
 
@@ -673,7 +788,7 @@
   box-shadow: 4px 5px 17px -4px var(--dark-blue);
 }
 
-.btn-ver-info::before{
+.btn-ver-info::before {
   content: "";
   position: absolute;
   left: -50px;
@@ -686,7 +801,7 @@
   transition: width 600ms;
 }
 
-.btn-matricula::before{
+.btn-matricula::before {
   content: "";
   position: absolute;
   left: -50px;
@@ -697,17 +812,17 @@
   background-color: var(--red);
   transform: skewX(45deg);
   z-index: -1;
-  transition: width 600ms
+  transition: width 600ms;
 }
 
 .btn-matricula:hover a {
   color: white;
 }
 
-.btn-ver-info:hover::before, .btn-matricula:hover::before {
+.btn-ver-info:hover::before,
+.btn-matricula:hover::before {
   width: 250%;
 }
-
 
 /* -- BOTON VER MÁS */
 
@@ -739,16 +854,18 @@
   right: 50%;
   bottom: 0;
   opacity: 0;
-  content: '';
+  content: "";
   background-color: var(--main-yellow);
   z-index: -1;
 }
 
-.btn-ver-mas:hover, .btn-ver-mas:focus {
+.btn-ver-mas:hover,
+.btn-ver-mas:focus {
   color: white;
 }
 
-.btn-ver-mas:hover:before, .btn-ver-mas:focus:before {
+.btn-ver-mas:hover:before,
+.btn-ver-mas:focus:before {
   transition: 0.5s all ease;
   left: 0;
   right: 0;
@@ -761,7 +878,7 @@
 
 /* -- IMAGEN GRUPO INVESTIGACION MÓVIL */
 
-.main-img-mob{
+.main-img-mob {
   text-align: center;
 }
 
@@ -769,33 +886,30 @@
   display: none;
 }
 
-
 /* --- MEDIA QUERIES */
 
-@media screen and (min-width: 360px ) {
+@media screen and (min-width: 360px) {
   .main-cont-mobile-text {
     left: 4rem;
   }
 }
-@media screen and (min-width: 375px ) {
-
-  .header-info-aula-btn{
+@media screen and (min-width: 375px) {
+  .header-info-aula-btn {
     padding: 0.3rem 1.25rem;
   }
 
   .main-cont-mobile-text {
     left: 5rem;
   }
-  
 }
 
-@media screen and (min-width: 425px ) {
-  
-  .header-info{
+@media screen and (min-width: 425px) {
+  .header-info {
     justify-content: end;
   }
 
-  .header-info-aula-btn a, .header-info-btn-link a {
+  .header-info-aula-btn a,
+  .header-info-btn-link a {
     font-size: 0.75rem;
   }
 
@@ -804,7 +918,7 @@
   }
 
   /* -- CONTENEDOR IMG CARD */
-  .course-img-text{
+  .course-img-text {
     padding-left: 1.5rem;
     padding-right: 1.2rem;
   }
