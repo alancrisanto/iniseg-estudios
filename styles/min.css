@@ -328,12 +328,12 @@ button {
   font-family: inherit;
 }
 
-button.clear-filter {
+button.btn-limpiar-filtro {
   width: 12rem;
   height: auto;
 }
 
-button.clear-filter .circle {
+button.btn-limpiar-filtro .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
   display: block;
@@ -344,7 +344,7 @@ button.clear-filter .circle {
   border-radius: 1.625rem;
 }
 
-button.clear-filter .circle .icon {
+button.btn-limpiar-filtro .circle .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   left: 0.3rem;
@@ -352,7 +352,7 @@ button.clear-filter .circle .icon {
   margin: auto;
 }
 
-button.clear-filter .button-text {
+button.btn-limpiar-filtro .button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
