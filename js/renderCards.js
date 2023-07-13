@@ -87,7 +87,7 @@ function cargarTarjetas() {
                     </div>
                     <div class="course-detail-info-btns">
                       <div class="course-btn btn-ver-info">
-                        <a href="">Ver Más Info</a>
+                        <a href="${card.linkMasInfo}" target="_blank" rel="noopener noreferer">Ver Más Info</a>
                       </div>
                       <div class="course-btn btn-matricula">
                         <a href="">Admisión</a>
