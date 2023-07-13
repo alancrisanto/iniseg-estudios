@@ -208,6 +208,12 @@
   }
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+  .course-img-text p:first-of-type {
+    font-size: clamp(0.72rem, 1.4vw, 1rem);
+  }
+}
+
 @media screen and (min-width:1280px) {
 
   /* -- BANNER BECA */

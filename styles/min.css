@@ -627,10 +627,11 @@ button:hover .icon #logs {
 }
 
 .course-img-text p:first-of-type {
+  display: inline-block;
   --gap: 1rem;
-  width: 10rem;
+  max-width: 100%;
   border-bottom: 2px solid;
-  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-size: clamp(0.72rem, 2vw, 1rem);
 }
 
 .course-img-text p:last-of-type {
