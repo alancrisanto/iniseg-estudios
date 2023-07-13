@@ -5,7 +5,7 @@ const cardContainer = document.querySelector(".cards");
 const btnVerMas = document.querySelector(".btn-ver-mas");
 
 // Definir la cantidad de tarjetas a cargar inicialmente y el incremento por clic
-const cardsPorCarga = 3;
+const cardsPorCarga = 6;
 let cardsCargadas = 0;
 
 // Función para cargar las tarjetas adicionales
