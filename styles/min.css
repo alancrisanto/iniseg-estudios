@@ -169,6 +169,7 @@
 
 .main-container-head h1 {
   font-weight: 700;
+  animation: 3s anim-lineUp ease-out 
 }
 
 .main-container-head span {
@@ -223,6 +224,25 @@
   color: var(--main-yellow);
   font-weight: 50;
   font-size: clamp(1.5rem, 2vw, 2rem);
+  animation: 3s anim-lineUp ease-out 
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 .main-filter-title h2 span {
@@ -627,10 +647,11 @@ button:hover .icon #logs {
 }
 
 .course-img-text p:first-of-type {
+  display: inline-block;
   --gap: 1rem;
-  width: 10rem;
+  max-width: 100%;
   border-bottom: 2px solid;
-  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-size: clamp(0.72rem, 2vw, 1rem);
 }
 
 .course-img-text p:last-of-type {

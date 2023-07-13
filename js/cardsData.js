@@ -16,6 +16,8 @@ const cardsData = [
     duracion: "9 a 12 meses",
     creditos: "20 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/seguridad/masteres-oficiales/master-en-seguridad-privada.html",
+    linkAdmision: "",
   },
   // Amenazas Híbridas, Seguridad y Defensa
   {
@@ -34,6 +36,8 @@ const cardsData = [
     duracion: "9 a 12 meses",
     creditos: "20 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/terrorismo/masteres-oficiales/master-amenazas-hibridas.html",
+    linkAdmision: "",
   },
   // Geoestrategia Internacional y Terrorismo Yihadista
   {
@@ -52,6 +56,8 @@ const cardsData = [
     duracion: "9 a 12 meses",
     creditos: "20 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/terrorismo/masteres-oficiales/master-en-geoestrategia-internacional-y-terrorismo-yihadista.html",
+    linkAdmision: "",
   },
   // Historia Militar
   {
@@ -70,6 +76,8 @@ const cardsData = [
     duracion: "9 a 12 meses",
     creditos: "20 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/terrorismo/masteres-oficiales/master-de-historia-militar.html",
+    linkAdmision: "",
   },
   // Ciberseguridad, Análisis e Ingeniería
   {
@@ -88,6 +96,8 @@ const cardsData = [
     duracion: "9 a 12 meses",
     creditos: "20 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/ciberseguridad/masteres-oficiales/master-ingenieria-ciberseguridad.html",
+    linkAdmision: "",
   },
   // Ciberseguridad, Ciberterrorismo y Ciberguerra
   {
@@ -106,6 +116,8 @@ const cardsData = [
     duracion: "9 a 12 meses",
     creditos: "20 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/ciberseguridad/masteres-oficiales/master-ciberterrorismo.html",
+    linkAdmision: "",
   },
   // Dirección y Gestión de la Ciberseguridad
   {
@@ -124,6 +136,8 @@ const cardsData = [
     duracion: "9 a 12 meses",
     creditos: "20 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/ciberseguridad/masteres-oficiales/master-en-direccion-y-gestion-de-la-ciberseguridad.html",
+    linkAdmision: "",
   },
   // "Compliance Penal y Tecnológico",
   {
@@ -142,6 +156,8 @@ const cardsData = [
     duracion: "9 a 12 meses",
     creditos: "60 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/terrorismo/masteres-oficiales/master-universitario-en-compliance-penal-y-tecnologico.html",
+    linkAdmision: "",
   },
   // "Derecho Internacional Humanitario y su Aplicación Práctica ante Conflictos",
   {
@@ -160,6 +176,8 @@ const cardsData = [
     duracion: "4 meses",
     creditos: "60 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/terrorismo/masteres-oficiales/master-en-derecho-internacional-humanitario.html",
+    linkAdmision: "",
   },
   // Diplomacia, Relaciones Internacionales, Seguridad y Defensa (DRISYD)
   {
@@ -178,6 +196,8 @@ const cardsData = [
     duracion: "5 a 8 meses",
     creditos: "30 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/terrorismo/masteres-oficiales/master-universitario-en-diplomacia-relaciones-internacionales-y-seguridad.html",
+    linkAdmision: "",
   },
   // "Criminalística Forense
   {
@@ -196,6 +216,8 @@ const cardsData = [
     duracion: "9 a 12 meses",
     creditos: "20 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/criminologia/masteres-oficiales/master-criminalistica-forense.html",
+    linkAdmision: "",
   },
   // Criminología y Victimología",
   {
@@ -214,6 +236,8 @@ const cardsData = [
     duracion: "5 a 8 meses",
     creditos: "30 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/criminologia/masteres-oficiales/master-en-victimologia.html",
+    linkAdmision: "",
   },
   // Neurocriminología y Psicopatología Criminal
   {
@@ -232,6 +256,8 @@ const cardsData = [
     duracion: "10 meses",
     creditos: "50 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/criminologia/masteres-oficiales/master-en-neurocriminologia.html",
+    linkAdmision: "",
   },
   // Inteligencia
   {
@@ -250,6 +276,8 @@ const cardsData = [
     duracion: "10 meses",
     creditos: "50 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/inteligencia/masteres-oficiales/master-en-inteligencia.html",
+    linkAdmision: "",
   },
 
   // ---- EXECUTIVES ----
@@ -271,6 +299,8 @@ const cardsData = [
     duracion: "9 a 12 meses",
     creditos: "20 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/seguridad/masteres-profesionales/master-profesional-en-seguridad-privada.html",
+    linkAdmision: "",
   },
   // Seguridad Turística y de los Medios de Transporte ## Falta imagen
   {
@@ -289,12 +319,14 @@ const cardsData = [
     duracion: "9 a 12 meses",
     creditos: "20 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/seguridad/masteres-profesionales/master-en-seguridad-turistica-y-de-los-medios-de-transporte.html",
+    linkAdmision: "",
   },
-  // Criminología y Victimología",
+  // Criminalística Forense",
   {
     id: 17,
     title: "Máster Executive",
-    description: "Criminología y Victimología",
+    description: "Criminalística Forense",
     img: "assets/images/cards/pdf12.png",
     titleMobile: "Título por Universidad eCampos",
     imgInstitution: "assets/images/ecampus.png",
@@ -307,6 +339,8 @@ const cardsData = [
     duracion: "5 a 8 meses",
     creditos: "30 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/criminologia/masteres-profesionales/master-profesional-en-criminalistica-forense.html",
+    linkAdmision: "",
   },
   // Criminología y Victimología",
   {
@@ -325,6 +359,8 @@ const cardsData = [
     duracion: "5 a 8 meses",
     creditos: "30 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/criminologia/masteres-profesionales/master-profesional-en-victimologia.html",
+    linkAdmision: "",
   },
   // Neurocriminología y Psicopatología Criminal
   {
@@ -343,6 +379,8 @@ const cardsData = [
     duracion: "10 meses",
     creditos: "50 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/criminologia/masteres-profesionales/master-profesional-en-neurocriminologia.html",
+    linkAdmision: "",
   },
   // Ciberseguridad, Análisis e Ingeniería
   {
@@ -361,6 +399,8 @@ const cardsData = [
     duracion: "9 a 12 meses",
     creditos: "20 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/ciberseguridad/masteres-profesionales/master-profesional-ingenieria-ciberseguridad.html",
+    linkAdmision: "",
   },
   // Ciberseguridad, Ciberterrorismo y Ciberguerra
   {
@@ -379,6 +419,8 @@ const cardsData = [
     duracion: "9 a 12 meses",
     creditos: "20 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/ciberseguridad/masteres-profesionales/master-profesional-ciberterrorismo.html",
+    linkAdmision: "",
   },
   // Dirección y Gestión de la Ciberseguridad
   {
@@ -397,6 +439,8 @@ const cardsData = [
     duracion: "9 a 12 meses",
     creditos: "20 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/ciberseguridad/masteres-profesionales/master-profesional-en-direccion-y-gestion-de-la-ciberseguridad.html",
+    linkAdmision: "",
   },
   // Inteligencia
   {
@@ -415,6 +459,8 @@ const cardsData = [
     duracion: "10 meses",
     creditos: "50 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/inteligencia/masteres-profesionales/master-profesional-en-inteligencia.html",
+    linkAdmision: "",
   },
   // Amenazas Híbridas, Seguridad y Defensa
   {
@@ -433,6 +479,8 @@ const cardsData = [
     duracion: "9 a 12 meses",
     creditos: "20 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/inteligencia/masteres-profesionales/master-profesional-amenazas-hibridas.html",
+    linkAdmision: "",
   },
   // Geoestrategia Internacional y Terrorismo Yihadista
   {
@@ -451,6 +499,8 @@ const cardsData = [
     duracion: "9 a 12 meses",
     creditos: "20 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/inteligencia/masteres-profesionales/master-profesional-en-geoestrategia-internacional-y-terrorismo-yihadista.html",
+    linkAdmision: "",
   },
   // Historia Militar
   {
@@ -469,8 +519,10 @@ const cardsData = [
     duracion: "9 a 12 meses",
     creditos: "20 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/inteligencia/masteres-profesionales/master-profesional-de-historia-militar.html",
+    linkAdmision: "",
   },
-  // Historia Militar
+  // Conflictos Armados Contemporáneos
   {
     id: 27,
     title: "Máster Executive",
@@ -487,6 +539,8 @@ const cardsData = [
     duracion: "9 a 12 meses",
     creditos: "20 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/inteligencia/masteres-profesionales/master-en-conflictos-armados-contemporaneos-conceptos-y-estrategias-de-la-guerra-fria.html",
+    linkAdmision: "",
   },
   // "Compliance Penal y Tecnológico",
   {
@@ -505,6 +559,8 @@ const cardsData = [
     duracion: "9 a 12 meses",
     creditos: "60 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/inteligencia/masteres-profesionales/master-profesional-en-compliance-penal-y-tecnologico.html",
+    linkAdmision: "",
   },
   // "Derecho Internacional Humanitario y su Aplicación Práctica ante Conflictos",
   {
@@ -523,6 +579,8 @@ const cardsData = [
     duracion: "4 meses",
     creditos: "60 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/inteligencia/masteres-profesionales/master-profesional-en-derecho-internacional-humanitario.html",
+    linkAdmision: "",
   },
   // Diplomacia, Relaciones Internacionales, Seguridad y Defensa (DRISYD)
   {
@@ -541,6 +599,270 @@ const cardsData = [
     duracion: "5 a 8 meses",
     creditos: "30 ETC",
     modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/inteligencia/masteres-profesionales/master-profesional-en-diplomacia-relaciones-internacionales-y-seguridad.html",
+    linkAdmision: "",
+  },
+
+  // CURSOS EXPERTOS Y DIPLOMADOS
+  // Curso de Gestión de la Seguridad en Puertos
+  {
+    id: 31,
+    title: "Diplomados Superiores Y Cursos Técnicos",
+    description: "Curso de Gestión de la Seguridad en Puertos",
+    img: "assets/images/cards/pdf10.png",
+    titleMobile: "Título por Universidad eCampos",
+    imgInstitution: "assets/images/ecampus.png",
+    institution: "eCampus",
+    priceBefore: 175,
+    priceNow: 100,
+    icon1: "assets/icons/CLOCK_icon.svg",
+    icon2: "assets/icons/BOOK_icon.svg",
+    icon3: "assets/icons/PC_icon.svg",
+    duracion: "5 a 8 meses",
+    creditos: "30 ETC",
+    modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/seguridad/cursos-expertos/curso-de-gestion-de-la-seguridad-en-puertos.html",
+    linkAdmision: "",
+  },
+  // Curso Superior de Director de Seguridad
+  {
+    id: 32,
+    title: "Diplomados Superiores Y Cursos Técnicos",
+    description: "Curso Superior de Director de Seguridad",
+    img: "assets/images/cards/pdf10.png",
+    titleMobile: "Título por Universidad eCampos",
+    imgInstitution: "assets/images/ecampus.png",
+    institution: "eCampus",
+    priceBefore: 175,
+    priceNow: 100,
+    icon1: "assets/icons/CLOCK_icon.svg",
+    icon2: "assets/icons/BOOK_icon.svg",
+    icon3: "assets/icons/PC_icon.svg",
+    duracion: "5 a 8 meses",
+    creditos: "30 ETC",
+    modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/seguridad/cursos-expertos/director-de-seguridad.html",
+    linkAdmision: "",
+  },
+  // Diploma Superior Universitario de Detective Privado
+  {
+    id: 33,
+    title: "Diplomados Superiores Y Cursos Técnicos",
+    description: "Diploma Superior Universitario de Detective Privado",
+    img: "assets/images/cards/pdf10.png",
+    titleMobile: "Título por Universidad eCampos",
+    imgInstitution: "assets/images/ecampus.png",
+    institution: "eCampus",
+    priceBefore: 175,
+    priceNow: 100,
+    icon1: "assets/icons/CLOCK_icon.svg",
+    icon2: "assets/icons/BOOK_icon.svg",
+    icon3: "assets/icons/PC_icon.svg",
+    duracion: "5 a 8 meses",
+    creditos: "30 ETC",
+    modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/seguridad/cursos-expertos/curso-de-detective-privado.html",
+    linkAdmision: "",
+  },
+  // Diplomado en Reconstrucción de Investigación de Accidentes de Tráfico
+  {
+    id: 34,
+    title: "Diplomados Superiores Y Cursos Técnicos",
+    description: "Diplomado en Reconstrucción de Investigación de Accidentes de Tráfico",
+    img: "assets/images/cards/pdf10.png",
+    titleMobile: "Título por Universidad eCampos",
+    imgInstitution: "assets/images/ecampus.png",
+    institution: "eCampus",
+    priceBefore: 175,
+    priceNow: 100,
+    icon1: "assets/icons/CLOCK_icon.svg",
+    icon2: "assets/icons/BOOK_icon.svg",
+    icon3: "assets/icons/PC_icon.svg",
+    duracion: "5 a 8 meses",
+    creditos: "30 ETC",
+    modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/seguridad/cursos-expertos/curso-en-investigacion-accidentes-trafico.html",
+    linkAdmision: "",
+  },
+  // Perito Judicial en Seguridad Privada
+  {
+    id: 35,
+    title: "Diplomados Superiores Y Cursos Técnicos",
+    description: "Perito Judicial en Seguridad Privada",
+    img: "assets/images/cards/pdf10.png",
+    titleMobile: "Título por Universidad eCampos",
+    imgInstitution: "assets/images/ecampus.png",
+    institution: "eCampus",
+    priceBefore: 175,
+    priceNow: 100,
+    icon1: "assets/icons/CLOCK_icon.svg",
+    icon2: "assets/icons/BOOK_icon.svg",
+    icon3: "assets/icons/PC_icon.svg",
+    duracion: "5 a 8 meses",
+    creditos: "30 ETC",
+    modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/seguridad/cursos-expertos/perito-judicial-en-seguridad-privada.html",
+    linkAdmision: "",
+  },
+  // Curso de Gestión de la Seguridad Aeroportuaria
+  {
+    id: 36,
+    title: "Diplomados Superiores Y Cursos Técnicos",
+    description: "Curso de Gestión de la Seguridad Aeroportuaria",
+    img: "assets/images/cards/pdf10.png",
+    titleMobile: "Título por Universidad eCampos",
+    imgInstitution: "assets/images/ecampus.png",
+    institution: "eCampus",
+    priceBefore: 175,
+    priceNow: 100,
+    icon1: "assets/icons/CLOCK_icon.svg",
+    icon2: "assets/icons/BOOK_icon.svg",
+    icon3: "assets/icons/PC_icon.svg",
+    duracion: "5 a 8 meses",
+    creditos: "30 ETC",
+    modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/seguridad/cursos-tecnicos/curso-de-gestion-de-la-seguridad-aeroportuaria.html",
+    linkAdmision: "",
+  },
+  // Curso de Gestión de la Seguridad en Infraestructuras Hoteleras
+  {
+    id: 37,
+    title: "Diplomados Superiores Y Cursos Técnicos",
+    description: "Curso de Gestión de la Seguridad en Infraestructuras Hoteleras",
+    img: "assets/images/cards/pdf10.png",
+    titleMobile: "Título por Universidad eCampos",
+    imgInstitution: "assets/images/ecampus.png",
+    institution: "eCampus",
+    priceBefore: 175,
+    priceNow: 100,
+    icon1: "assets/icons/CLOCK_icon.svg",
+    icon2: "assets/icons/BOOK_icon.svg",
+    icon3: "assets/icons/PC_icon.svg",
+    duracion: "5 a 8 meses",
+    creditos: "30 ETC",
+    modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/seguridad/cursos-tecnicos/curso-de-gestion-de-la-seguridad-en-infraestructuras-hoteleras.html",
+    linkAdmision: "",
+  },
+  // Delincuencia Organizada y Trata de Seres Humanos
+  {
+    id: 38,
+    title: "Diplomados Superiores Y Cursos Técnicos",
+    description: "Delincuencia Organizada y Trata de Seres Humanos",
+    img: "assets/images/cards/pdf10.png",
+    titleMobile: "Título por Universidad eCampos",
+    imgInstitution: "assets/images/ecampus.png",
+    institution: "eCampus",
+    priceBefore: 175,
+    priceNow: 100,
+    icon1: "assets/icons/CLOCK_icon.svg",
+    icon2: "assets/icons/BOOK_icon.svg",
+    icon3: "assets/icons/PC_icon.svg",
+    duracion: "5 a 8 meses",
+    creditos: "30 ETC",
+    modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/seguridad/cursos-tecnicos/delincuencia-organizada-y-trata-de-seres-humanos.html",
+    linkAdmision: "",
+  },
+  // Ciberespacio y Relaciones Internacionales
+  {
+    id: 39,
+    title: "Diplomados Superiores Y Cursos Técnicos",
+    description: "Ciberespacio y Relaciones Internacionales",
+    img: "assets/images/cards/pdf10.png",
+    titleMobile: "Título por Universidad eCampos",
+    imgInstitution: "assets/images/ecampus.png",
+    institution: "eCampus",
+    priceBefore: 175,
+    priceNow: 100,
+    icon1: "assets/icons/CLOCK_icon.svg",
+    icon2: "assets/icons/BOOK_icon.svg",
+    icon3: "assets/icons/PC_icon.svg",
+    duracion: "5 a 8 meses",
+    creditos: "30 ETC",
+    modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/ciberseguridad/cursos-tecnicos/ciberespacio-y-relaciones-internacionales.html",
+    linkAdmision: "",
+  },
+  // Derecho Internacional en el Ciberespacio
+  {
+    id: 40,
+    title: "Diplomados Superiores Y Cursos Técnicos",
+    description: "Derecho Internacional en el Ciberespacio",
+    img: "assets/images/cards/pdf10.png",
+    titleMobile: "Título por Universidad eCampos",
+    imgInstitution: "assets/images/ecampus.png",
+    institution: "eCampus",
+    priceBefore: 175,
+    priceNow: 100,
+    icon1: "assets/icons/CLOCK_icon.svg",
+    icon2: "assets/icons/BOOK_icon.svg",
+    icon3: "assets/icons/PC_icon.svg",
+    duracion: "5 a 8 meses",
+    creditos: "30 ETC",
+    modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/ciberseguridad/cursos-tecnicos/Derecho-Internacional-en-el-Ciberespacio.html",
+    linkAdmision: "",
+  },
+  // El Agresor, la Víctima y los Aspectos Legales
+  {
+    id: 41,
+    title: "Diplomados Superiores Y Cursos Técnicos",
+    description: "El Agresor, la Víctima y los Aspectos Legales",
+    img: "assets/images/cards/pdf10.png",
+    titleMobile: "Título por Universidad eCampos",
+    imgInstitution: "assets/images/ecampus.png",
+    institution: "eCampus",
+    priceBefore: 175,
+    priceNow: 100,
+    icon1: "assets/icons/CLOCK_icon.svg",
+    icon2: "assets/icons/BOOK_icon.svg",
+    icon3: "assets/icons/PC_icon.svg",
+    duracion: "5 a 8 meses",
+    creditos: "30 ETC",
+    modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/criminologia/cursos-tecnicos/El%20Agresor-la-V%C3%ADctima-y-los-Aspectos-Legales.html",
+    linkAdmision: "",
+  },
+  // Intervención con Delincuentes Menores y Violencia Intrafamiliar
+  {
+    id: 42,
+    title: "Diplomados Superiores Y Cursos Técnicos",
+    description: "Intervención con Delincuentes Menores y Violencia Intrafamiliar",
+    img: "assets/images/cards/pdf10.png",
+    titleMobile: "Título por Universidad eCampos",
+    imgInstitution: "assets/images/ecampus.png",
+    institution: "eCampus",
+    priceBefore: 175,
+    priceNow: 100,
+    icon1: "assets/icons/CLOCK_icon.svg",
+    icon2: "assets/icons/BOOK_icon.svg",
+    icon3: "assets/icons/PC_icon.svg",
+    duracion: "5 a 8 meses",
+    creditos: "30 ETC",
+    modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/criminologia/cursos-tecnicos/intervencion-con-delincuentes-menores-y-violencia-intrafamiliar.html",
+    linkAdmision: "",
+  },
+  // Inteligencia, Psicología y Toma de Decisiones
+  {
+    id: 43,
+    title: "Diplomados Superiores Y Cursos Técnicos",
+    description: "Inteligencia, Psicología y Toma de Decisiones",
+    img: "assets/images/cards/pdf10.png",
+    titleMobile: "Título por Universidad eCampos",
+    imgInstitution: "assets/images/ecampus.png",
+    institution: "eCampus",
+    priceBefore: 175,
+    priceNow: 100,
+    icon1: "assets/icons/CLOCK_icon.svg",
+    icon2: "assets/icons/BOOK_icon.svg",
+    icon3: "assets/icons/PC_icon.svg",
+    duracion: "5 a 8 meses",
+    creditos: "30 ETC",
+    modalidad: "Online",
+    linkMasInfo: "https://www.iniseg.es/inteligencia/cursos-tecnicos/Gu%C3%ADas-Profesionales-Inteligencia-Psicolog%C3%ADa-y-Toma-de-Decisiones.html",
+    linkAdmision: "",
   },
 ];
 
