@@ -350,6 +350,7 @@ header .sticky .nav-menu > li > a {
 	}
 	nav .nav-menu > li .dropdown-menu.show {
 		left: 0;
+		opacity: 1 !important; /* Se arega esta línea para que se muestre el submenu ref linea 398*/
 	}
 	nav .nav-menu > li:hover .dropdown-menu {
 		max-height: 100vh;
@@ -380,8 +381,22 @@ header .sticky .nav-menu > li > a {
 	}
 }
 
+/* -- Se agrega estos estilos para el menu en vista tablet no aparezca en toda la pantalla */
+@media screen and (min-width: 760px) and (max-width: 1020px) {
+	nav .nav-menu {
+		width: 45%;
+	}
+}
+/* fin estilos menu tablet */
+
 @media screen and (max-width: 1024px) {
 	nav .nav-menu > li {
 		font-size: 0.75rem;
+	}
+
+	/* Para lograr el efecto del menu se agrega también estos estilo para que desparezca el submenu y no aparezca al lado ref linea 353 */
+	nav .nav-menu > li:hover .dropdown-menu {
+		opacity: 0;
+		transition: all 0.3s ease-in-out;
 	}
 }
