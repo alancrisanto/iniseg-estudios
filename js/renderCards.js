@@ -120,14 +120,19 @@ function coloresCards() {
   const bgBlues = document.querySelectorAll(".course-img-text");
 
   bgBlues.forEach((blue, index) => {
+    console.log(blue)
+    console.log(blue.style)
     if (index % 3 === 0) {
-      blue.style.backgroundColor = "rgba(34,44,63,0.7)"; // Color blue
+      // blue.style.backgroundColor = "rgba(34,44,63,0.7)"; // Color blue
+      blue.style.setProperty("--pseudo-element-color-main", "var(--blue)"); // Asignar color a pseudo elemento after
       blue.style.setProperty("--pseudo-element-color", "var(--red)"); // Asignar color a pseudo elemento after
     } else if (index % 3 === 1) {
-      blue.style.backgroundColor = "rgba(251,192,9,0.5)"; // Color Yellow
+      // blue.style.backgroundColor = "rgba(251,192,9,0.5)"; // Color Yellow
+      blue.style.setProperty("--pseudo-element-color-main", "var(--main-yellow)"); // Asignar color a pseudo elemento after
       blue.style.setProperty("--pseudo-element-color", "var(--blue-card)"); // Asignar color a pseudo elemento after
     } else {
-      blue.style.backgroundColor = "rgba(222,29,39,0.7)"; // Color Red
+      // blue.style.backgroundColor = "rgba(222,29,39,0.7)"; // Color Red
+      blue.style.setProperty("--pseudo-element-color-main", "var(--red)"); // Asignar color a pseudo elemento after
       blue.style.setProperty("--pseudo-element-color", "var(--main-yellow)"); // Asignar color a pseudo elemento after
     }
   });
