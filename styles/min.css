@@ -631,9 +631,19 @@ button:hover .icon #logs {
   box-sizing: border-box;
   width: 90%;
   padding: 0.6rem;
-  background-color: var(--dark-blue);
-  clip-path: polygon(0 0, 90% 0, calc(100% - var(--red-triangle-width)) 50%, 100% 50%, 100% 100%, 0 100%);
+  /* background-color: var(--dark-blue); */
+  /* clip-path: polygon(0 0, 90% 0, calc(100% - var(--red-triangle-width)) 50%, 100% 50%, 100% 100%, 0 100%); */
   color: white;
+}
+
+.course-img-text::before {
+  content: "";
+  position: absolute;
+  display: block;
+  inset: 0;
+  clip-path: polygon(0 0, 90% 0, calc(100% - var(--red-triangle-width)) 50%, 100% 50%, 100% 100%, 0 100%);
+  background-color: var(--pseudo-element-color-main);
+  mix-blend-mode: multiply;
 }
 
 .course-img-text::after {
@@ -661,6 +671,8 @@ button:hover .icon #logs {
 
 .course-img-text p {
   text-shadow: 2px 0px 2px black;
+  position: relative;
+
 }
 
 .course-detail-img img {
