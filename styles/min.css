@@ -169,7 +169,7 @@
 
 .main-container-head h1 {
   font-weight: 700;
-  animation: 3s anim-lineUp ease-out 
+  animation: 3s anim-lineUp ease-out;
 }
 
 .main-container-head span {
@@ -224,7 +224,7 @@
   color: var(--main-yellow);
   font-weight: 50;
   font-size: clamp(1.5rem, 2vw, 2rem);
-  animation: 3s anim-lineUp ease-out 
+  animation: 3s anim-lineUp ease-out;
 }
 
 @keyframes anim-lineUp {
@@ -460,7 +460,6 @@ button:hover .icon #logs {
   }
 }
 
-
 /* FILTER BANNER IMG */
 .main-container-img-desktop {
   display: none;
@@ -672,7 +671,6 @@ button:hover .icon #logs {
 .course-img-text p {
   text-shadow: 2px 0px 2px black;
   position: relative;
-
 }
 
 .course-detail-img img {
@@ -918,6 +916,97 @@ button:hover .icon #logs {
 .main-img-desktop {
   display: none;
 }
+
+/* FOOTER */
+.footer-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-1,
+.footer-2,
+.footer-3 {
+  padding: 2rem 2rem;
+}
+.footer-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(134px, 170px));
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.footer-2 img {
+  aspect-ratio: 2/1;
+  object-fit: contain;
+  width: 100%;
+}
+
+.footer-logo {
+  margin-bottom: 2rem;
+}
+
+.footer-content {
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.footer-menu-content h3 {
+  color: var(--main-yellow);
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+}
+
+.footer-menu-content ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-menu-content ul li a {
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  color: white;
+}
+
+.footer-menu-content ul li a:hover {
+  color: var(--main-yellow);
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+
+.footer-icons a {
+  font-size: clamp(1.25rem, 1.2vw, 1.5rem);
+  color: white;
+}
+
+.footer-icons a:hover {
+  color: var(--main-yellow);
+}
+
+.footer-address p {
+  color: white;
+  text-align: center;
+  font-weight: 300;
+}
+
+.footer-3 {
+  background-color: var(--main-blue);
+  color: white;
+}
+
+.footer-3 p {
+  text-align: center;
+  font-size: clamp(0.75rem, 1.2vw, 0.85rem);
+}
+
+.footer-3 p span {
+  padding: 0 0.2rem;
+}
+
+/* FIN FOOTER */
 
 /* --- MEDIA QUERIES */
 
