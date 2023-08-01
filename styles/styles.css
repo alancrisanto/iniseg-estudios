@@ -9,6 +9,7 @@
 	--blue-subMenu: #e5ebf8;
 	--light-blue: #7AC1FE;
 	--blue-card: #1E5274;
+	--footer-blue: #041b33;
 	--red: #DE1D27;
 	--blue: #1E5274;
 	--grey: #eee;
@@ -37,6 +38,10 @@ p{
 	margin: 0 !important;
 }
 
+ul {
+	padding-left: 0 !important;
+}
+
 li {
 	list-style: none !important;
 }
@@ -56,4 +61,8 @@ label {
 
 figure {
 	margin: 0 !important;
+}
+
+footer{
+	background-color: var(--footer-blue);
 }
