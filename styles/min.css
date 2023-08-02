@@ -939,7 +939,7 @@ button:hover .icon #logs {
 
 .footer-2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(134px, 170px));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 150px));
   justify-content: center;
   justify-items: center;
   align-items: center;
