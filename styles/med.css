@@ -43,6 +43,10 @@
     color: white;
   }
 
+  .header-info-icons-desktop a:hover{
+    color: var(--light-blue);
+  }
+
   /* HEADER VIDEO */
   /* .header-video {
     margin-top: -100px;
@@ -121,12 +125,14 @@
   .footer-icons {
     justify-content: flex-end;
     gap: 1rem;
+    padding-right: 0.5rem;
   }
 
   .footer-address p {
     font-size: clamp(0.8rem, 1.2vw, 1rem);
     text-align: right;
     margin-bottom: 1rem !important;
+    padding-right: 0.5rem;
   }
 
   .footer-menu-content h3 {

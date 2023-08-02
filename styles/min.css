@@ -71,6 +71,10 @@
   color: white;
 }
 
+.header-info-icons-mobile a:hover{
+  color: var(--light-blue);
+}
+
 .header-info-icons-desktop,
 .header-info-phone {
   display: none;
@@ -928,6 +932,11 @@ button:hover .icon #logs {
 .footer-3 {
   padding: 2rem 2rem;
 }
+
+.footer-1-content{
+  padding: 0 0 1rem 2rem;
+}
+
 .footer-2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(134px, 170px));
@@ -935,12 +944,6 @@ button:hover .icon #logs {
   justify-items: center;
   align-items: center;
   padding: 1rem;
-}
-
-.footer-2 img {
-  aspect-ratio: 2/1;
-  object-fit: contain;
-  width: 100%;
 }
 
 .footer-logo {
@@ -953,28 +956,39 @@ button:hover .icon #logs {
   margin-bottom: 2rem;
 }
 
-.footer-menu-content h3 {
+.footer-menu{
+  padding: 0.8rem 0 0.5rem;
+  border-bottom: 1px solid var(--dark-grey);
+}
+
+.footer-menu h3 {
   color: var(--main-yellow);
   font-size: clamp(0.85rem, 1.5vw, 1rem);
 }
 
-.footer-menu-content ul li {
-  margin-bottom: 0.5rem;
+.footer-menu ul{
+  padding-top: 0.65rem;
 }
 
-.footer-menu-content ul li a {
+.footer-menu ul li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.85rem;
+}
+
+.footer-menu ul li a {
   font-size: clamp(0.85rem, 1.5vw, 1rem);
   color: white;
 }
 
-.footer-menu-content ul li a:hover {
-  color: var(--main-yellow);
+.footer-menu ul li a:hover {
+  color: var(--light-blue);
 }
 
 .footer-icons {
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 1rem;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin: 1rem 0;
 }
 
 .footer-icons a {
@@ -983,13 +997,23 @@ button:hover .icon #logs {
 }
 
 .footer-icons a:hover {
-  color: var(--main-yellow);
+  color: var(--light-blue);
+}
+
+.footer-address{
+  margin-top: 1rem;
 }
 
 .footer-address p {
   color: white;
   text-align: center;
   font-weight: 300;
+}
+
+.footer-2 img {
+  aspect-ratio: 2/1;
+  object-fit: contain;
+  width: 100%;
 }
 
 .footer-3 {
