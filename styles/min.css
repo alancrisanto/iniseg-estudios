@@ -1082,4 +1082,10 @@ button:hover .icon #logs {
   .main-col-course-image {
     min-height: 170px;
   }
+
+  /* FOOTER */
+  .footer-2 {
+    gap: 1rem;
+  }
+  /* FIN FOOTER */
 }
