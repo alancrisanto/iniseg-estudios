@@ -206,6 +206,21 @@
   .main-img-desktop {
     display: block;
   }
+
+    /* FOOTER */
+
+    .footer-1-content{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+    .footer-menu{
+      border-bottom: 0px  ;
+    }
+.animate .bi {
+  display: none;
+}
+  /* FIN FOOTER */
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1200px){
