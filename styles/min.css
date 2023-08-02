@@ -922,6 +922,7 @@ button:hover .icon #logs {
 }
 
 /* FOOTER */
+
 .footer-1 {
   display: flex;
   flex-direction: column;
@@ -937,6 +938,13 @@ button:hover .icon #logs {
   padding: 0 0 1rem 1rem;
 }
 
+.footer-1-icons-address h3 {
+  color: var(--main-yellow);
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  text-align: left;
+  margin: 1.5rem 0 1rem;
+}
+
 .footer-2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 150px));
@@ -948,7 +956,11 @@ button:hover .icon #logs {
 }
 
 .footer-logo {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-logo img {
+  max-height: 70px;
 }
 
 .footer-content {
@@ -1002,7 +1014,7 @@ button:hover .icon #logs {
 }
 
 .footer-icons a {
-  font-size: clamp(1.25rem, 1.2vw, 1.5rem);
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
   color: white;
 }
 

@@ -1,10 +1,9 @@
 @media only screen and (min-width: 1024px) {
-
-  .header-img-container{
+  .header-img-container {
     max-width: 155px;
   }
-  
-  .header-info-lang-icon{
+
+  .header-info-lang-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +24,7 @@
 
   /* CONTENEDOR MAIN FILTER Y CARDS */
 
-  .main-container-body{
+  .main-container-body {
     display: grid;
     grid-template-columns: 25% 1fr;
     gap: 1rem;
@@ -36,7 +35,7 @@
   /* CARDS */
 
   /* CARD IMG */
-  .main-col-course-image{
+  .main-col-course-image {
     flex-basis: 370px;
   }
 
@@ -45,11 +44,11 @@
     height: auto;
   }
 
-  .course-img-text p:last-of-type{
+  .course-img-text p:last-of-type {
     font-size: clamp(0.7rem, 1.3vw, 1rem);
   }
 
-  .main-col-courses-card{
+  .main-col-courses-card {
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -62,9 +61,7 @@
     /* display: none; */
   }
 
-
-
-  .main-col-course-detail{
+  .main-col-course-detail {
     display: flex;
     flex-direction: row;
     min-width: 0;
@@ -75,13 +72,13 @@
   }
 
   /* -- CARD DETAIL MOBILE */
-  .course-detail-mob{
+  .course-detail-mob {
     display: none;
   }
 
   /* --DETALLE CARDS PRECIO */
 
-  .course-detail-pricing{
+  .course-detail-pricing {
     flex-direction: column;
     justify-content: start;
     margin-top: 0;
@@ -99,32 +96,31 @@
     margin-bottom: 0;
   }
 
-  .course-detail-price{
+  .course-detail-price {
     display: block;
   }
 
   /* -- DETALLE CARD ICONS */
-  
-  .course-icon-1 img{
+
+  .course-icon-1 img {
     display: block;
   }
 
   /* -- DETALLE CARDS PRECIOS ANTES Y DESPUES */
 
-  .price-before h6{
+  .price-before h6 {
     font-size: 1.2rem;
   }
 
-  .price-now span:nth-child(1){
+  .price-now span:nth-child(1) {
     font-size: 1.3rem;
   }
-  
-  
+
   /* --CARD ICON / BOTONES CONTAINER */
-  .course-detail-info{
+  .course-detail-info {
     min-width: 200px;
   }
-  
+
   /* ÍCONOS PRECIOS */
   .course-detail-info-icons {
     flex-direction: row;
@@ -134,12 +130,12 @@
   }
 
   /* CARD ICON TEXT SPAN */
-  .icon-text-mobile{
+  .icon-text-mobile {
     display: none;
   }
 
   /* BOTONES PRECIO */
-  .course-detail-info-btns{
+  .course-detail-info-btns {
     margin-top: 1rem;
     gap: 0;
     flex-direction: column;
@@ -152,25 +148,25 @@
   }
 
   .course-btn a {
-    font-size: 1rem
+    font-size: 1rem;
   }
 
   /* FILTER COLUMN */
 
   .main-col-filters {
-    overflow:hidden;
+    overflow: hidden;
   }
 
-  .filter-title-mobile{
+  .filter-title-mobile {
     display: none;
   }
 
-  .filter-title-desktop{
+  .filter-title-desktop {
     display: block;
   }
 
   /* -- FILTER MESSAGE */
-  .filtrar-mobile-text{
+  .filtrar-mobile-text {
     display: none;
   }
 
@@ -182,80 +178,93 @@
     position: relative;
   }
 
-  .main-cont-mobile-text{
+  .main-cont-mobile-text {
     position: absolute;
     left: 1rem;
     bottom: 1rem;
   }
 
-  .main-cont-mobile-text p:nth-child(1){
+  .main-cont-mobile-text p:nth-child(1) {
     font-size: 2rem;
     line-height: 2rem;
   }
 
-  .main-cont-mobile-text p:nth-child(2){
+  .main-cont-mobile-text p:nth-child(2) {
     font-size: 1.3rem;
   }
 
   /* IMAGEN GRUPO INVESTIGACIÓN DESKTOP */
 
-  .main-img-mob{
+  .main-img-mob {
     display: none;
   }
-  
+
   .main-img-desktop {
     display: block;
   }
 
-    /* FOOTER */
+  /* FOOTER */
 
-    .footer-1-content{
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1rem;
-    }
-    .footer-menu{
-      border-bottom: 0px  ;
-    }
-.animate .bi {
-  display: none;
-}
+  .footer-1-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .footer-menu {
+    border-bottom: 0px;
+  }
+  .animate .bi {
+    display: none;
+  }
+
+  .footer-menu ul li{
+    padding-left: 0;
+  }
+
+  .footer-1-icons-address{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-1-icons-address h3 {
+    text-align: center;
+    margin: 3rem 0 1rem;
+  }
   /* FIN FOOTER */
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1200px){
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
   .course-img-text p:first-of-type {
     font-size: clamp(0.72rem, 1.4vw, 1rem);
   }
 }
 
-@media screen and (min-width:1280px) {
-
+@media screen and (min-width: 1280px) {
   /* -- BANNER BECA */
-  .main-cont-mobile-text{
+  .main-cont-mobile-text {
     bottom: 1rem;
   }
 
-    .main-cont-mobile-text p:nth-child(1){
+  .main-cont-mobile-text p:nth-child(1) {
     font-size: 2.5rem;
     line-height: 3rem;
   }
 
-  .main-cont-mobile-text p:nth-child(2){
+  .main-cont-mobile-text p:nth-child(2) {
     font-size: 1.5rem;
   }
 
   /* -- IMG CARDS */
-  .main-col-course-detail{
+  .main-col-course-detail {
     gap: 1.5rem;
   }
 
-  .main-col-course-image{
+  .main-col-course-image {
     flex-basis: 450px;
   }
 
   /* --CARD ICON / BOTONES CONTAINER */
-  .course-detail-info{
+  .course-detail-info {
     min-width: 220px;
   }
 }
