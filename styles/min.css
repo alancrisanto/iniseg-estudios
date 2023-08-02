@@ -944,6 +944,7 @@ button:hover .icon #logs {
   justify-items: center;
   align-items: center;
   padding: 1rem;
+  gap: 0.5rem;
 }
 
 .footer-logo {
@@ -1083,9 +1084,4 @@ button:hover .icon #logs {
     min-height: 170px;
   }
 
-  /* FOOTER */
-  .footer-2 {
-    gap: 1rem;
-  }
-  /* FIN FOOTER */
 }
