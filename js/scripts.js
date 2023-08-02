@@ -152,7 +152,7 @@ function clearFilter(){
 
 btnFiltro.addEventListener("click", clearFilter)
 
-//Animar icon + menu footer
+//ANIMAR ICON + MENU FOOTER
 
 const elementosH3 = document.querySelectorAll(".animate");
 
@@ -164,3 +164,20 @@ function alternarClase(event) {
 elementosH3.forEach(elemento => {
   elemento.addEventListener("click", alternarClase);
 });
+
+// BORRAR CLASE COLLAPSE DE SUBMENU
+function deleteCollapse(){
+
+  const submenuList = document.querySelectorAll(".sub-footer-1-list");
+
+submenuList.forEach(element => {
+  if(window.innerWidth >= 1023){
+    element.classList.remove("collapse")
+  } else {
+    element.classList.add("collapse")
+  }
+})
+}
+
+deleteCollapse();
+window.addEventListener("resize", deleteCollapse);
