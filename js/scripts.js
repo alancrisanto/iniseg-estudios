@@ -151,3 +151,16 @@ function clearFilter(){
 }
 
 btnFiltro.addEventListener("click", clearFilter)
+
+//Animar icon + menu footer
+
+const elementosH3 = document.querySelectorAll(".animate");
+
+function alternarClase(event) {
+  // Agregar o quitar la clase 'rotate' al elemento h3 clickeado
+  event.currentTarget.classList.toggle("rotate");
+}
+
+elementosH3.forEach(elemento => {
+  elemento.addEventListener("click", alternarClase);
+});
