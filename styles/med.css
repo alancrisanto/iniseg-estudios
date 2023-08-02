@@ -126,6 +126,7 @@
     justify-content: flex-end;
     gap: 1rem;
     padding-right: 0.5rem;
+    margin: 0;
   }
 
   .footer-address p {
@@ -142,6 +143,10 @@
   .footer-2 {
     margin-bottom: 2rem;
     gap: 1rem;
+  }
+
+  .footer-1-icons-address h3 {
+    text-align: right;
   }
   /* FIN FOOTER */
 }
