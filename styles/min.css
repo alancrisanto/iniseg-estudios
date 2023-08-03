@@ -72,7 +72,7 @@
 }
 
 .header-info-icons-mobile a:hover{
-  color: var(--light-blue);
+  color: var(--main-yellow);
 }
 
 .header-info-icons-desktop,
@@ -1020,7 +1020,7 @@ button:hover .icon #logs {
 }
 
 .footer-icons a:hover {
-  color: var(--light-blue);
+  color: var(--main-yellow);
 }
 
 .footer-address{
