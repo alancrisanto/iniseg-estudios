@@ -991,6 +991,7 @@ button:hover .icon #logs {
 
 .footer-menu ul{
   padding-top: 0.65rem;
+  padding-left: 0;
 }
 
 .footer-menu ul li {
