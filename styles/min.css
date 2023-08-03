@@ -936,6 +936,7 @@ button:hover .icon #logs {
 
 .footer-1-content{
   padding: 0 0 2rem;
+  min-width: 250px;
 }
 
 .footer-1-icons-address h3 {
