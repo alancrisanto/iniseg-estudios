@@ -29,6 +29,11 @@
 	display: none;
 }
 
+body {
+	max-width: 2200px;
+	margin: 0 auto !important;
+}
+
 
 a {
 	text-decoration: none !important;

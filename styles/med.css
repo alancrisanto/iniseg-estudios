@@ -130,7 +130,7 @@
   }
 
   .footer-address p {
-    font-size: clamp(0.8rem, 1.2vw, 1rem);
+    font-size: clamp(0.8rem, 1vw, 0.95rem);
     text-align: right;
     margin-bottom: 1rem !important;
     padding-right: 0.5rem;
@@ -148,6 +148,10 @@
   .footer-1-icons-address h3 {
     text-align: right;
   }
+
+  .footer-3 {
+    flex-direction: row;
+}
   /* FIN FOOTER */
 }
 
@@ -155,4 +159,9 @@
   .main-cont-mobile-text {
     left: 16.5rem;
   }
+
+  /* FOOTER */
+  .footer-3 span {
+    display: inline-block;
+}
 }

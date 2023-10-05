@@ -156,6 +156,7 @@
 }
 .header-video img {
   width: 100%;
+  max-height: 550px;
 }
 
 /* --- MAIN AREA */
@@ -948,7 +949,7 @@ button:hover .icon #logs {
 
 .footer-2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 150px));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 120px));
   justify-content: center;
   justify-items: center;
   align-items: center;
@@ -1008,6 +1009,18 @@ button:hover .icon #logs {
   color: var(--light-blue);
 }
 
+.sub-footer-1-list-title a:hover {
+  color: white !important;
+}
+
+.sub-footer-1-sub-list li a {
+  color: var(--dark-grey) !important;
+}
+
+.sub-footer-1-sub-list li a:hover {
+  color: var(--light-blue) !important;
+}
+
 .footer-icons {
   display: flex;
   justify-content: flex-start;
@@ -1016,7 +1029,7 @@ button:hover .icon #logs {
 }
 
 .footer-icons a {
-  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  font-size: clamp(1.25rem, 1.2vw, 1.5rem);
   color: white;
 }
 
@@ -1037,21 +1050,33 @@ button:hover .icon #logs {
 .footer-2 img {
   aspect-ratio: 2/1;
   object-fit: contain;
-  width: 100%;
+  max-width: 120px;
+  height: auto;
+  width: 120px;
 }
 
 .footer-3 {
   background-color: var(--main-blue);
   color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.footer-3 p {
+.footer-3 p, .footer-3 a {
   text-align: center;
   font-size: clamp(0.75rem, 1.2vw, 0.85rem);
+  color: white;
 }
 
-.footer-3 p span {
-  padding: 0 0.2rem;
+.footer-3 a:hover {
+  color: var(--main-yellow);
+}
+
+.footer-3 span {
+  display: none;
 }
 
 /* FIN FOOTER */

@@ -1,0 +1,149 @@
+----------------------------------------------
+***cambios de estilos en stylesmenu:
+-----------------------------------------------
+agregar a header .sticky:
+
+  max-width: 2200px
+
+agregar a .header-video img :
+
+  max-height: 550px;
+
+Línea 50:
+modificar por font-size: 0.75rem;
+
+Agregado linea 186 al 196
+
+nav .nav-menu>li .dropdown-menu .right-section .dropdown-links li .dropdown-links-items .dropdown-links-items-group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+nav .nav-menu>li .dropdown-menu .right-section .dropdown-links li .dropdown-links-items .dropdown-links-items-group .dropdown-list-items-group-a {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+
+Agregado linea 413 al 419 
+
+@media only screen and (min-width: 1024px) {
+
+  nav .nav-menu>li .dropdown-menu .right-section .dropdown-links li .dropdown-links-items .dropdown-links-items-group {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+
+
+----------------------------------------------
+***cambios de estilos en min.css:
+-----------------------------------------------
+modificar linea 951 class .footer-2 por:
+grid-template-columns: repeat(auto-fit, minmax(100px, 120px));
+
+Agreado línea 1011 al 1022
+
+.sub-footer-1-list-title a:hover {
+  color: white !important;
+}
+
+.sub-footer-1-sub-list li a {
+  color: var(--dark-grey) !important;
+}
+
+.sub-footer-1-sub-list li a:hover {
+  color: var(--light-blue) !important;
+}
+
+Modificar línea 1031 por:
+ font-size: clamp(1.25rem, 1.2vw, 1.5rem);
+
+
+linea 1052-1054 agreado en class footer-2 img:
+  max-width: 120px;
+  height: auto;
+  width: 120px;
+
+
+
+-------------------------------------------------
+***cambios en Index:
+-------------------------------------------------
+--Menu
+Agreado Líneas de 251 al 264
+
+--Footer
+borrar Línea 571 al 585 (3 li element)
+borrar Linea 758 al 762 (1 li element)
+
+lineas 908, 912, 915, quitar el % de height y width
+
+div class footer-3 borrar contenido y agregar:
+      <p>Copyrights © 2022</p>
+      <p>Todos los derechos reservados</p>
+      <span>/</span>
+      <a href="https://www.iniseg.es/condiciones-generales-de-contratacion.html" target="_blank"
+        rel="noopener noreferer">Condiciones generales de contratación</a>
+      <span>/</span>
+      <a href="https://www.iniseg.es/aviso-legal.html" target="_blank" rel="noopener noreferer">Aviso legal</a>
+      <span>/</span>
+      <a href="https://www.iniseg.es/politica-sobre-cookies.html" target="_blank" rel="noopener noreferer">Política
+        de Cookies</a>
+      <span>/</span>
+      <a href="https://www.iniseg.es/politica-de-privacidad.html" target="_blank" rel="noopener noreferer">Política
+        de privacidad</a>
+
+Corregir en footer:
+investicacion por investigación
+colegio por Colegio
+
+----------------------------------------------
+***cambios de estilos en min.css:
+-----------------------------------------------
+
+agregar footer-3  {
+    display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-3 p, .footer-3 a {
+    color: white;
+}
+
+.footer-3 a:hover {
+  color: var(--main-yellow);
+}
+
+.footer-3 span {
+  display: none;
+}
+
+----------------------------------------------
+***cambios de estilos en med.css:
+-----------------------------------------------
+
+agregar en query min-width 768px:
+.footer-3 {
+    flex-direction: row;
+}
+
+modificar font-size de .footer-address p:
+
+clamp(0.8rem, 1vw,0.95rem);
+
+----------------------------------------------
+***cambios de estilos en styles.css:
+-----------------------------------------------
+
+agregar:
+body {
+  max-width: 2200px;
+	margin: 0 auto !important;
+}
